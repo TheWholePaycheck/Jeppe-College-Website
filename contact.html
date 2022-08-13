@@ -1,279 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conatct Us | Jeppecollege</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conatct Us | Jeppecollege</title>
 
-    <!--1. slider animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+  <!--1. slider animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      /* background: #55ffe5; */
+      background-color: yellow;
+      font-size: 14px;
+      font-family: "Inter", sans-serif;
+    }
+
+    .container {
+      width: 80%;
+      margin: 50px auto;
+    }
+
+    .contact-box {
+      background: #fff;
+      display: flex;
+    }
+
+    .contact-left {
+      flex-basis: 60%;
+      padding: 40px 60px;
+    }
+
+    .contact-right {
+      flex-basis: 40%;
+      padding: 40px;
+      background-color: #1c00b5;
+      color: white;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .drop {
+      animation: dropIn 1s ease forwards;
+      transform: translateY(-150%);
+    }
+
+    @keyframes dropIn {
+      from {
+        transform: translateY(-500px);
       }
 
-      body {
-        /* background: #55ffe5; */
-        background-color: yellow;
-        font-size: 14px;
-        font-family: "Inter", "Arial Narrow", Arial, sans-serif;
+      to {
+        transform: translateY(0);
       }
+    }
 
-      .container {
-        width: 80%;
-        margin: 50px auto;
-      }
+    .drop-one {
+      animation-delay: 100ms;
+    }
 
-      .contact-box {
-        background: #fff;
-        display: flex;
-      }
-      .contact-left {
-        flex-basis: 60%;
-        padding: 40px 60px;
-      }
-      .contact-right {
-        flex-basis: 40%;
-        padding: 40px;
-        background-color: #1c00b5;
-        color: white;
-      }
-      h1 {
-        margin-bottom: 10px;
-      }
+    .drop-two {
+      animation-delay: 200ms;
+    }
 
-      .drop {
-        animation: dropIn 1s ease forwards;
-        transform: translateY(-150%);
-      }
+    .container p {
+      margin-bottom: 40px;
+    }
 
-      @keyframes dropIn {
-        from {
-          transform: translateY(-500px);
-        }
-        to {
-          transform: translateY(0);
-        }
-      }
-      .drop-one {
-        animation-delay: 100ms;
-      }
-      .drop-two {
-        animation-delay: 200ms;
-      }
+    .input-row {
+      /* display: flex; */
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
 
-      .container p {
-        margin-bottom: 40px;
-      }
-      .input-row {
-        /* display: flex; */
-        justify-content: space-around;
-        margin-bottom: 20px;
-      }
+    .input-row .input-group {
+      flex-basis: 45%;
+      padding-bottom: 15px;
+    }
 
-      .input-row .input-group {
-        flex-basis: 45%;
-        padding-bottom: 15px;
-      }
-      input {
-        width: 100%;
-        border: none;
-        border-bottom: 1px solid #ccc;
-        outline: none;
-        padding-bottom: 2px;
-      }
+    input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      outline: none;
+      padding-bottom: 2px;
+    }
 
-      textarea {
-        width: 100%;
-        border: 1px solid #ccc;
-        outline: none;
-        padding: 10px;
-        box-sizing: border-box;
-      }
+    textarea {
+      width: 100%;
+      border: 1px solid #ccc;
+      outline: none;
+      padding: 10px;
+      box-sizing: border-box;
+    }
 
-      button {
-        background: #1c00b5;
-        width: 100px;
-        border: none;
-        outline: none;
-        color: #ccc;
-        height: 35px;
-        border-radius: 30px;
-        margin-top: 20px;
-        box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
-        cursor: pointer;
-      }
+    button {
+      background: #1c00b5;
+      width: 100px;
+      border: none;
+      outline: none;
+      color: #ccc;
+      height: 35px;
+      border-radius: 30px;
+      margin-top: 20px;
+      box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+      cursor: pointer;
+    }
 
-      .contact-left h3 {
-        color: #1c00b5;
-        font-weight: 600;
-        margin-bottom: 30px;
-      }
-      .contact-right h3 {
-        font-weight: 600;
-        margin-bottom: 30px;
-      }
+    .contact-left h3 {
+      color: #1c00b5;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
 
-      tr td {
-        padding-right: 50px;
-      }
-      tr td {
-        padding-top: 20px;
-      }
-      td,
-      tr {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container drop">
-      <div data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1000">
-        <h1 class="drop-one">Connect With Us</h1>
-        <p class="drop-two">
-          Have any questions you would like to ask?<br />
-          Feel free to help get in touch with us.
-        </p>
-      </div>
+    .contact-right h3 {
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
 
-      <div class="contact-box">
-        <div class="contact-left">
-          <h3>Send your request</h3>
-          <form>
-            <div class="input-row">
-              <div class="input-group">
-                <label>Name</label>
-                <input type="text" placeholder="Enter your name" />
-              </div>
+    tr td {
+      padding-right: 50px;
+    }
 
-              <div class="input-group">
-                <label>Surname</label>
-                <input type="text" placeholder="Enter your surname" />
-              </div>
+    tr td {
+      padding-top: 20px;
+    }
 
-              <div class="input-group">
-                <label>Phone</label>
-                <input type="text" placeholder="Enter your number" />
-              </div>
-              <div class="input-group">
-                <label>Email</label>
-                <input type="email" placeholder="Enter your Email" />
-              </div>
-            </div>
+    td,
+    tr {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  </style>
+</head>
 
-            <label>Message</label>
-            <textarea placeholder="Your Message" cols="55" rows="5"></textarea>
-
-            <button type="submit">SEND</button>
-          </form>
-        </div>
-
-        <div class="contact-right">
-          <h3>Reach Us</h3>
-          <table>
-            <tr>
-              <td>
-                <img
-                  src="./icons/email-white.svg"
-                  alt="email icon"
-                  width="20px"
-                />
-                Emails:
-              </td>
-
-              <td>contactus@gmail.com</td>
-            </tr>
-
-            <tr>
-              <td>
-                <img
-                  src="./icons/telephone-white.svg"
-                  alt="telephone icon"
-                  width="20px"
-                />
-                Tel:
-              </td>
-              <td>+27 10 634 0045</td>
-            </tr>
-
-            <tr>
-              <td>
-                <img
-                  src="./icons/location-white.svg"
-                  alt="address icon"
-                  width="20px"
-                />Address:
-              </td>
-              <td>
-                Cortex building <br />
-                Marshal Street <br />
-                Johannesburg <br />
-                2000
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
+<body>
+  <div class="container drop">
+    <div data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1000">
+      <h1 class="drop-one">Connect With Us</h1>
+      <p class="drop-two">
+        Have any questions you would like to ask?<br />
+        Feel free to help get in touch with us.
+      </p>
     </div>
 
-    <!--1. slider animation -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <div class="contact-box">
+      <div class="contact-left">
+        <h3>Send your request</h3>
+        <form>
+          <div class="input-row">
+            <div class="input-group">
+              <label>Name</label>
+              <input type="text" placeholder="Enter your name" />
+            </div>
 
-    <script>
-      AOS.init();
+            <div class="input-group">
+              <label>Surname</label>
+              <input type="text" placeholder="Enter your surname" />
+            </div>
 
-      // confetti
-      var count = 200;
-      var defaults = {
-        origin: { y: 0.7 },
-      };
+            <div class="input-group">
+              <label>Phone</label>
+              <input type="text" placeholder="Enter your number" />
+            </div>
+            <div class="input-group">
+              <label>Email</label>
+              <input type="email" placeholder="Enter your Email" />
+            </div>
+          </div>
 
-      function fire(particleRatio, opts) {
-        confetti(
-          Object.assign({}, defaults, opts, {
-            particleCount: Math.floor(count * particleRatio),
-          })
-        );
-      }
+          <label>Message</label>
+          <textarea placeholder="Your Message" cols="55" rows="5"></textarea>
 
-      setTimeout(() => {
-        fire(0.25, {
-          spread: 26,
-          startVelocity: 55,
-        });
-        fire(0.2, {
-          spread: 60,
-        });
-        fire(0.35, {
-          spread: 100,
-          decay: 0.91,
-          scalar: 0.8,
-        });
-        fire(0.1, {
-          spread: 120,
-          startVelocity: 25,
-          decay: 0.92,
-          scalar: 1.2,
-        });
-        fire(0.1, {
-          spread: 120,
-          startVelocity: 45,
-        });
-      }, 2000);
-    </script>
+          <button type="submit">SEND</button>
+        </form>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-    <script src="./chatbot.js"></script>
+      <div class="contact-right">
+        <h3>Reach Us</h3>
+        <table>
+          <tr>
+            <td>
+              <img src="./icons/email-white.svg" alt="email icon" width="20px" />
+              Emails:
+            </td>
+
+            <td>contactus@gmail.com</td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="./icons/telephone-white.svg" alt="telephone icon" width="20px" />
+              Tel:
+            </td>
+            <td>+27 10 634 0045</td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="./icons/location-white.svg" alt="address icon" width="20px" />Address:
+            </td>
+            <td>
+              Cortex building <br />
+              Marshal Street <br />
+              Johannesburg <br />
+              2000
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!--1. slider animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+
+    // confetti
+    var count = 200;
+    var defaults = {
+      origin: { y: 0.7 },
+    };
+
+    function fire(particleRatio, opts) {
+      confetti(
+        Object.assign({}, defaults, opts, {
+          particleCount: Math.floor(count * particleRatio),
+        })
+      );
+    }
+
+    setTimeout(() => {
+      fire(0.25, {
+        spread: 26,
+        startVelocity: 55,
+      });
+      fire(0.2, {
+        spread: 60,
+      });
+      fire(0.35, {
+        spread: 100,
+        decay: 0.91,
+        scalar: 0.8,
+      });
+      fire(0.1, {
+        spread: 120,
+        startVelocity: 25,
+        decay: 0.92,
+        scalar: 1.2,
+      });
+      fire(0.1, {
+        spread: 120,
+        startVelocity: 45,
+      });
+    }, 2000);
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="./chatbot.js"></script>
 </body>
+
 </html>
