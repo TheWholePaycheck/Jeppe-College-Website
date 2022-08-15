@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conatct Us | Jeppecollege</title>
+    <title>Contact Us | Jeppecollege</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,6 +15,7 @@
 
     <!--1. slider animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <style>
       * {
         padding: 0;
@@ -23,9 +24,9 @@
 
       body {
         /* background: #55ffe5; */
-        background-color: white;
+        background-color: yellow;
         font-size: 14px;
-        font-family: "Inter", "Arial Narrow", Arial, sans-serif;
+        font-family: "Inter", sans-serif;
       }
 
       .container {
@@ -34,19 +35,22 @@
       }
 
       .contact-box {
-        background: yellow;
+        background: #fff;
         display: flex;
       }
+
       .contact-left {
         flex-basis: 60%;
         padding: 40px 60px;
       }
+
       .contact-right {
         flex-basis: 40%;
         padding: 40px;
         background-color: #1c00b5;
         color: white;
       }
+
       h1 {
         margin-bottom: 10px;
       }
@@ -60,13 +64,16 @@
         from {
           transform: translateY(-500px);
         }
+
         to {
           transform: translateY(0);
         }
       }
+
       .drop-one {
         animation-delay: 100ms;
       }
+
       .drop-two {
         animation-delay: 200ms;
       }
@@ -74,6 +81,7 @@
       .container p {
         margin-bottom: 40px;
       }
+
       .input-row {
         /* display: flex; */
         justify-content: space-around;
@@ -84,13 +92,13 @@
         flex-basis: 45%;
         padding-bottom: 15px;
       }
+
       input {
         width: 100%;
         border: none;
         border-bottom: 1px solid #ccc;
         outline: none;
         padding-bottom: 2px;
-        padding: 10px;
       }
 
       textarea {
@@ -119,6 +127,7 @@
         font-weight: 600;
         margin-bottom: 30px;
       }
+
       .contact-right h3 {
         font-weight: 600;
         margin-bottom: 30px;
@@ -127,32 +136,20 @@
       tr td {
         padding-right: 50px;
       }
+
       tr td {
         padding-top: 20px;
       }
+
       td,
       tr {
         display: flex;
         align-items: center;
         justify-content: space-between;
       }
-
-      @media (max-width: 888px) {
-        .contact-box {
-          flex-direction: column;
-        }
-      }
-      @media (max-width: 434px) {
-        tr td {
-          flex-direction: column;
-        }
-        td,
-        tr {
-          display: block;
-        }
-      }
     </style>
   </head>
+
   <body>
     <div class="container drop">
       <div data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1000">
