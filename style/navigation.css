@@ -212,7 +212,15 @@
     .navigation-menu {
         padding: 10px; /* add padding on the sides of the menu*/
         justify-content: space-between; /* add space between the logo and the menu on the right side*/
+    }    
+}
+
+@media screen and (max-width: 855px) {
+    .logo-nav {
+        width: 80%;
     }
 
-    
+    .menu-mobile {
+        padding-right: 20px;
+    }
 }
