@@ -113,7 +113,7 @@ section.accreditations {
     gap: 10px;
     font-family: 'Inter', sans-serif;
     padding: 20px;
-    
+
     background-size: cover;
     color: white;
 
@@ -230,5 +230,12 @@ section.accreditations {
     .courses-container {
         display: flex;
         flex-direction: column;
+    }
+}
+
+/* disable the courses hover effect on tablets and smaller devices  */
+@media screen and (max-width: 768px) {
+    .course-content {
+        transform: none;
     }
 }
