@@ -172,14 +172,30 @@
     transform: translateY(0%);
 }
 
+/* hide the close icon by default */
+.close {
+    display: none;
+}
+
+/* show the close icon when the menu is open */
+.menu-mobile.open .close {
+    display: block;
+}
+
+/* hide the hamburger icon when the menu is open */
+.menu-mobile.open .hamburger {
+    display: none;
+}
+
+/* style the mobile dropdown menu links */
 .menu-dropdown-mobile a {
     color: white;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
 }
 
-/* put the icon on top of everything */
-.hamburger, .logo-nav {
+/* put the logo and navigation icons on top of everything */
+.hamburger, .close, .logo-nav {
     position: relative;
     z-index: 999999;
 }

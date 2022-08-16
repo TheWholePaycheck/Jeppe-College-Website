@@ -292,6 +292,7 @@
 
                 <div class="menu-mobile">
                     <img src="./icons/hamburger.svg" alt="hamburger icon" class="hamburger" width="40px">
+                    <img src="./icons/close.svg" alt="hamburger icon" class="close" width="40px">
 
                     <div class="menu-dropdown-mobile">
                         <a href="#">About Us</a>
@@ -493,11 +494,14 @@
 
         // MENU MOBILE DROPDOWN
         const hamburger = document.querySelector(".hamburger") // select the hamburger
+        const closeIcon = document.querySelector(".close") // select the close icon
         const menu = document.querySelector(".menu-mobile") // select the hamburger
 
-        // run a function when the hamburger is clicked
-        hamburger.addEventListener("click", function () {
-            menu.classList.toggle("open") // add a class
+        // toggle classes when the mobile navigation icons are clicked
+        Array(hamburger, closeIcon).forEach(icon => {
+            icon.addEventListener("click", function () {
+                menu.classList.toggle("open") // add a class
+            })
         })
     </script>
 </body>
