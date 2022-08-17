@@ -1,13 +1,27 @@
-name: "TODOs to Issues"
-on: [push, pull_request]
-
+# .github/workflows/netlify.yml
+name: Build and Deploy to Netlify
+on:
+  push:
+  pull_request:
 jobs:
-  todo_issues:
-    runs-on: ubuntu-latest
-    name: A job to create issues from todos
+  build:
+    runs-on: ubuntu-18.04
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Get todos action step
-        id: issue
-        uses: LarvenLLC/todo-issues@v1
+      - uses: actions/checkout@v2
+
+      # ( Build to ./dist or other directory... )
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: './'
+          production-branch: master
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Deploy from GitHub Actions"
+          enable-pull-request-comment: false
+          enable-commit-comment: true
+          overwrites-pull-request-comment: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 1
