@@ -1,0 +1,13 @@
+on:
+  push:
+    branches:
+    - main
+    
+  pull_request:
+    branches:
+    - main
+    
+jobs:
+  convert_comment_todos:
+    name: todo-actions
+    uses: dtinth/todo-actions@v0.2.0
