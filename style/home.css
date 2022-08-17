@@ -1,4 +1,4 @@
-body {
+body, html {
     overflow-x: hidden;
 }
 
@@ -18,15 +18,48 @@ section.accreditations {
     height: 100vh;
     /* transform: translateY(20px); */
     background-position: center;
+    padding: 30px 20px;
 
     /* center content */
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    gap: 30px;
 
     /* ovoid the slideshow images from being bleeding out of the hero section */
     position: relative;
     overflow: hidden;
+}
+
+/* HERO BUTTONS */
+.hero-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+.hero-btns button {
+    padding: 10px 20px;
+    border: solid 4px transparent;
+    font-family: 'Inter', sans-serif;
+}
+
+.hero-btns .primary-hero-btn {
+    cursor: pointer;
+    background-color: yellow;
+    font-weight: 600;
+}
+
+.hero-btns .primary-hero-btn:hover .hero-right-arrow {
+    padding-left: 10px;
+}
+.hero-btns .secondary-hero-btn {
+    background-color: transparent;
+    font-weight: 600;
+    border-color: yellow;
+    color: yellow;
 }
 
 /* slideshow feature */
@@ -54,6 +87,8 @@ section.accreditations {
     height: 100%;
     background-color: black;
     opacity: 0.5;
+    top: 0;
+    left: 0;
 }
 
 .hero-title {
@@ -62,8 +97,6 @@ section.accreditations {
     color: #fff;
     overflow-y: hidden;
     line-height: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
     z-index: 20;
 }
 
@@ -81,6 +114,7 @@ section.accreditations {
     display: flex;
     flex-direction: column;
     transform: translateY(0);
+    gap: 25px;
 }
 
 /* courses section */
@@ -231,11 +265,22 @@ section.accreditations {
         display: flex;
         flex-direction: column;
     }
+
+    .hero-title {
+        font-size: 34px;
+        line-height: 50px;
+    }
 }
 
 /* disable the courses hover effect on tablets and smaller devices  */
 @media screen and (max-width: 768px) {
     .course-content {
         transform: none;
+    }
+}
+
+@media screen and (max-height: 825px) {
+    .hero-section, .hero-overlay, .slideshow-image {
+        min-height: 825px;
     }
 }

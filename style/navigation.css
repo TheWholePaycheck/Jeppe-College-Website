@@ -203,7 +203,7 @@
 /* RESPONSIVE NAVIGATION  FOR MOBILE*/
 
 /* if the width of the screen is 750px or less */
-@media (max-width: 750px) {
+@media (max-width: 990px) {
     .contact-banner {
         flex-direction: column;
         height: auto;
@@ -223,6 +223,10 @@
     /* display the hamburger */
     .menu-mobile {
         display: block
+    }
+
+    .nav-right-side {
+        padding-right: 10px;
     }
 
     .navigation-menu {
