@@ -1,6 +1,6 @@
-name: 🔂 Surge PR Preview
+name: Deploy Preview with Surge.sh
 
-on: [pull_request]
+on: [push]
 
 jobs:
   preview:
