@@ -24,6 +24,10 @@
     <link rel="stylesheet" href="./style/footer.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+    <!-- link the css of the slider animation library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -122,7 +126,7 @@
                 </div>
             </div>
 
-            <div class="course two">
+            <div class="course two" data-aos="fade-right">
                 <div class="course-content">
                     <h3 class="course-title">Information Technology</h3>
                     <p class="course-summary">This qualification is designed to provide an opportunity for a learner to
@@ -130,7 +134,7 @@
                 </div>
             </div>
 
-            <div class="course three">
+            <div class="course three" data-aos="fade-left">
                 <div class="course-content">
                     <h3 class="course-title">Business Studies</h3>
                     <p class="course-summary">This qualification is designed to provide an opportunity for a learner to
@@ -138,7 +142,7 @@
                 </div>
             </div>
 
-            <div class="course four">
+            <div class="course four" data-aos="fade-right">
                 <div class="course-content">
                     <h3 class="course-title">School of Culinary Arts</h3>
                     <p class="course-summary">This qualification is designed to provide an opportunity for a learner to
@@ -146,7 +150,7 @@
                 </div>
             </div>
 
-            <div class="course five">
+            <div class="course five" data-aos="fade-left">
                 <div class="course-content">
                     <h3 class="course-title">Sector Education & Training Authority</h3>
                     <p class="course-summary">This qualification is designed to provide an opportunity for a learner to
@@ -241,6 +245,14 @@
     <!-- link the dropdown code -->
     <script src="./scripts/dropdown.js"></script>
 
+    <!-- add the scroll animation library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
     <!-- slideshow feature -->
     <script>
         // get all the images as array
@@ -257,6 +269,16 @@
             images[i].classList.toggle("fade") 
             i += direction
         }, 2000)
+
+        // only use slide in animation on smaller devices
+        const horizontalCoursesQuery = window.matchMedia("(min-width: 850px)")
+        const coursesCards = document.querySelectorAll(".course")
+        if (horizontalCoursesQuery.matches) {
+            // remove the fade in attributes
+            coursesCards.forEach(course => {
+                course.removeAttribute("data-aos")
+            })
+        }
 
         // just playing around, doing a one liner :D
         document.querySelector(".twp").innerText = `TheWhole${Array("GodDamn", "Blessed", "Thicc", "Damn", "Stacked", "Mighty", "Green")[Math.ceil(Math.random() * randomNames.length - 1)]}Paycheck`
