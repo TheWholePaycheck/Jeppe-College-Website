@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Engineering N1 - N6</title>
+        <link rel="stylesheet" href="../style/courses.css" type="text/css">
+
+        <!-- This is the google font called inter -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+        
+            .contact-banner{
+                background-color: gainsboro;
+                height: 70px;
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            .main-banner{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            ul{
+                list-style: none;
+                display: flex;
+                gap: 50px;
+                padding-right: 50px;
+            }
+            
+            ul li {
+                display: flex;
+                align-items: center;
+            }
+            
+            ul a {
+                text-decoration: none;
+                font-family: Inter;
+            }
+            
+            .contact-btn{
+                color: white;
+                background-color: navy;
+                padding:10px 30px;
+                font-weight: bold;
+            }
+            .text-slider{
+                color: yellow;
+            }
+            .btns{
+                color: white;
+                display: flex;
+                gap: 50px;
+                padding-left: 80px;
+                padding-top: 20px;
+            }
+            .btn-apply{
+                text-decoration: none;
+                color: white;
+                background-color: #1C1564;
+                padding: 10px 30px;
+            }
+            .btn-apply:hover{
+                background-color: yellow;
+                color: #1C1564;
+            }
+            .btn-courses{
+                text-decoration: none;
+                color: white;
+                background-color: #1C1564;
+                padding: 10px 30px;
+            }
+            .btn-courses:hover{
+                color: #1C1564;
+                background-color: yellow;
+                padding: 10px 30px;
+            
+            }
+            .main-mother{
+                padding-top: 150px;
+            
+                background: url(./images/backgroung-image.jpg);
+                background-size: cover;
+                background-position: center top;
+                height: 100vh;
+                
+            }
+            .bg-paragraph{
+            padding: 30px;
+            margin: 20px;
+            font-family: Inter;
+            }
+            
+            nav {
+                width: 100%;
+                position: fixed;
+                top: 0;
+                background-color: gainsboro;
+            }
+    </style>
+    </head>
+
+    <body>
+        <div class="main-mother">
+            <nav>
+                <div class="contact-banner">
+        
+                    <img src="./icons/telephone.svg" width="25px"><a href="tel:+27478776337">+27478776337</a>
+                    <img src="./icons/email.svg" width="25px"><a href="mailto:jeppecollege.com">jeppecollege.com</a>
+            </div>
+        
+            <div class="main-banner">
+                <img src="./images/banner.png" alt="Jeppe college's banner" width="400px">
+                    <ul>
+                        <li> <a href="#">About Us</a> </li>
+                        <li> <a href="#"> Campuses</a><img src="./icons/caret-down.svg" width="20px"></li>
+                        <li> <a href="#">Galley </a> </li>
+                        <li> <a href="#" class="contact-btn">Contact Us</a> </li>
+                    </ul>   
+            </div>
+            </nav>
+            <h1 class="header">Engineering Studies: N1 - N6</span></h1>
+            <div class="btns">
+                <a href="#" class="btn-apply">APPLY</a>
+                <a href="#" class="btn-courses"> COURSES OFFERED</a>
+            </div>
+        </div>
+
+        <section class="education">            
+            <h2 class="sub-header">Engineering N1 - N3</h2>
+            <p class="info">This qualification is designed to provide an opprtunity for learners to have an understanding of technical Engineering 
+                principles and skills. The course futher empowers students with analytical abilities which involves mathematical calculations and manipulation, 
+                hand -skills (practical skills) and practical capabilities. Admission Requirements: Fundamental competenices in the areas of Communication, mathematic literacy and life skills at a NQF Level 3. 
+                The ability to use a personal computer, training band up to NQF Level 2, competent and computing at NQF Level 1.</p>
+            
+            <table border="0" class="main-table"> 
+                <tr>
+                    <th width="1000" class="eng-header"><h2>National Certificate: Electrical Engineering N1 - N3</h2></th>
+                    <th width="1000" class="eng-header"><h2>National Certificate: Civil Engineering N1 - N3</h2></th>
+                </tr>
+
+                <tr>
+                    <td  class="eng-sub-header">Modules</td>
+                    <td  class="eng-sub-header">Modules</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <th width="1000" id="n1-module">N1</th>
+                                <th width="1000" id="n2-module">N2</th>
+                                <th width="1000" id="n3-module">N3</th>
+                            </tr>
+                            <tr>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Mathematics</li>
+                                        <li>Engineering Science</li>
+                                        <li>Industrial Engineering</li>
+                                        <li>Electricity Trade Theory</li>
+                                    </ol>
+                                </td>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Mathematics</li>
+                                        <li>Engineering Science</li>
+                                        <li>Industrial Engineering</li>
+                                        <li>Electricity Trade Theory</li>
+                                    </ol>
+                                </td>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Mathematics</li>
+                                        <li>Engineering Science</li>
+                                        <li>Industrial Engineering</li>
+                                        <li>Electro-technology</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                   
+                    <td>
+                        <table>
+                            <tr>
+                                <th width="1000" id="n1-module">N1</th>
+                                <th width="1000" id="n2-module">N2</th>
+                                <th width="1000" id="n3-module">N3</th>
+                            </tr>
+                            <tr>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Mathematics</li>
+                                        <li>Engineering Science</li>
+                                        <li>Industrial Engineering</li>
+                                        <li>Electricity Trade Theory</li>
+                                    </ol>
+                                </td>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Mathematics</li>
+                                        <li>Engineering Science</li>
+                                        <li>Industrial Engineering</li>
+                                        <li>Electricity Trade Theory</li>
+                                    </ol>
+                                </td>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Mathematics</li>
+                                        <li>Engineering Science</li>
+                                        <li>Industrial Engineering</li>
+                                        <li>Electro-technology</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+
+            <table border="0" class="main-table">         
+                <tr>
+                    <td width="1000" class="eng-header"><h2>National Certificate: Plumbing N1 - N3</h2></td>
+                    <td width="1000" class="eng-header"><h2>National Certificate: Boiler Making N1 - N3</h2></td>
+                </tr>
+
+                <tr>
+                    <td  class="eng-sub-header">Modules</td>
+                    <td  class="eng-sub-header">Modules</td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <th width="1000" id="n1-module">N1</th>
+                                <th width="1000" id="n2-module">N2</th>
+                                <th width="1000" id="n3-module">N3</th>
+                            </tr>
+                            <tr>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Plumbing Theory</li>
+                                        <li>Building Drawing</li>
+                                        <li>Building Science</li>
+                                        <li>Mathematics</li>
+                                    </ol>
+                                </td>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Plumbing Theory</li>
+                                        <li>Building Drawing</li>
+                                        <li>Building Science</li>
+                                        <li>Mathematics</li>
+                                    </ol>
+                                </td>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Building Drawing</li>
+                                        <li>Building Science</li>
+                                        <li>Mathematics</li>
+                                        <li>Building & Civil Tech</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </table> 
+                    </td>
+
+                    <td>
+                        <table>
+                            <tr>
+                                <th width="1000" id="n1-module">N1</th>
+                                <th width="1000" id="n2-module">N2</th>
+                                <th width="1000" id="n3-module">N3</th>
+                            </tr>
+                            <tr>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Plumbing Theory</li>
+                                        <li>Building Drawing</li>
+                                        <li>Building Science</li>
+                                        <li>Mathematics</li>
+                                    </ol>
+                                </td>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Plumbing Theory</li>
+                                        <li>Building Drawing</li>
+                                        <li>Building Science</li>
+                                        <li>Mathematics</li>
+                                    </ol>
+                                </td>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Building Drawing</li>
+                                        <li>Building Science</li>
+                                        <li>Mathematics</li>
+                                        <li>Building & Civil Tech</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            
+            <table border="0" class="main-table">         
+                <tr>
+                    <td width="1000" class="eng-header"><h2>National Certificate: Fitting and Turning N1 - N3</h2></td>
+                    <td width="1000" class="eng-header"><h2>National Certificate: Motor Trade N1 - N3</h2></td>
+                </tr>
+
+                <tr>
+                    <td  class="eng-sub-header">Modules</td>
+                    <td  class="eng-sub-header">Modules</td>
+                </tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <th width="1000" id="n1-module">N1</th>
+                                <th width="1000" id="n2-module">N2</th>
+                                <th width="1000" id="n3-module">N3</th>
+                            </tr>
+                            <tr>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Fitting and Machining</li>
+                                        <li>Engineering Drawing</li>
+                                        <li>Engineering Science</li>
+                                        <li>Mathematics</li>
+                                    </ol>
+                                </td>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Fitting and Machining</li>
+                                        <li>Engineering Drawing</li>
+                                        <li>Engineering Science</li>
+                                        <li>Mathematics</li>
+                                    </ol>
+                                </td>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Mechanotechnics</li>
+                                        <li>Engineering Drawing</li>
+                                        <li>Engineering Science</li>
+                                        <li>Mathematics</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </table>  
+                    </td>
+
+                    <td>
+                        <table>
+                            <tr>
+                                <th width="1000" id="n1-module">N1</th>
+                                <th width="1000" id="n2-module">N2</th>
+                                <th width="1000" id="n3-module">N3</th>
+                            </tr>
+                            <tr>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Motor Trade Theory</li>
+                                        <li>Engineering Drawing</li>
+                                        <li>Engineering Science</li>
+                                        <li>Mathematics</li>
+                                    </ol>
+                                </td>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Motor Trade Theory OR Diesel Trade Theory</li>
+                                        <li>Engineering Drawing</li>
+                                        <li>Engineering Science</li>
+                                        <li>Mathematics</li>
+                                    </ol>
+                                </td>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Motor Trade Theory OR Diesel Trade Theory </li>
+                                        <li>Engineering Drawing</li>
+                                        <li>Engineering Science</li>
+                                        <li>Mathematics</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+
+        <section class="education">            
+            <h2 class="sub-header">Engineering N4 - N6</h2>
+            
+            <table border="0" class="main-table"> 
+                <tr>
+                    <th width="1000" class="eng-header"><h2>National Certificate: Mechanical Engineering N4 - N6</h2></th>
+                    <th width="1000" class="eng-header"><h2>National Certificate: Civil Engineering N4 - N6</h2></th>
+                </tr>
+
+                <tr>
+                    <td  class="eng-sub-header">Modules</td>
+                    <td  class="eng-sub-header">Modules</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <th width="1000" id="n1-module">N4</th>
+                                <th width="1000" id="n2-module">N5</th>
+                                <th width="1000" id="n3-module">N6</th>
+                            </tr>
+                            <tr>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Mathematics</li>
+                                        <li>Engineering Science</li>
+                                        <li>Mechanical Draughting</li>
+                                        <li>Mechano Technology OR Fluid Mechanics</li>
+                                    </ol>
+                                </td>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Power Machines</li>
+                                        <li>Mathematics</li>
+                                        <li>Mechanotehincs</li>
+                                        <li>Mechanical Draughting OR Engineering Drawing</li>
+                                    </ol>
+                                </td>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Power Machines Mathematics</li>
+                                        <li>Mechanical Draughting OR <br>Engineering Drawing OR <br>Strenght of meterial</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                   
+                    <td>
+                        <table>
+                            <tr>
+                                <th width="1000" id="n1-module">N4</th>
+                                <th width="1000" id="n2-module">N5</th>
+                                <th width="1000" id="n3-module">N6</th>
+                            </tr>
+                            <tr>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Building & Structuring</li>
+                                        <li>Construction building & Structuring surveying</li>
+                                        <li>Building Administration quantity surveying or mathematics</li>
+                                    </ol>
+                                </td>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Building & Structuring</li>
+                                        <li>Construction building & Structuring Surveying</li>
+                                        <li>Building Administration quantity surveying or Mathematics or Mathematics Or <br>Strenght of material</li>
+                                    </ol>
+                                </td>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Building & Structuring</li>
+                                        <li>Construction building & Structuring Surveying</li>
+                                        <li>Building Administration quantity surveying or Mathematics Or Mathematics Or <br>Strenght of material</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+
+            <table border="0" class="main-table">         
+                <tr>
+                    <td width="1000" class="eng-header"><h2>National Certificate: Plumbing N1 - N3</h2></td>
+                </tr>
+                
+                <tr>
+                    <td  class="eng-sub-header">Modules</td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <th width="1000" id="n1-module">N1</th>
+                                <th width="1000" id="n2-module">N2</th>
+                                <th width="1000" id="n3-module">N3</th>
+                            </tr>
+                            <tr>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Plumbing Theory</li>
+                                        <li>Building Drawing</li>
+                                        <li>Building Science</li>
+                                        <li>Mathematics</li>
+                                    </ol>
+                                </td>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Plumbing Theory</li>
+                                        <li>Building Drawing</li>
+                                        <li>Building Science</li>
+                                        <li>Mathematics</li>
+                                    </ol>
+                                </td>
+                                <td id="eng-course">
+                                    <ol>
+                                        <li>Building Drawing</li>
+                                        <li>Building Science</li>
+                                        <li>Mathematics</li>
+                                        <li>Building & Civil Tech</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </table> 
+                    </td>
+                </tr>
+            </table>
+
+            
+            
+        </section>
+
+        <script src="./chatbot.js"></script>
+    </body>
+</html>
