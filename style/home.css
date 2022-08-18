@@ -276,6 +276,12 @@ section.accreditations {
     .course-content {
         transform: none;
     }
+
+    /* marquee animation should be faster on smaller devices */
+    .marquee-left, .marquee-right {
+        animation-duration: 30s;
+    }
+
 }
 
 @media screen and (max-height: 825px) {
