@@ -136,7 +136,7 @@ section.accreditations {
 
 .courses-container .course {
     background-color: gainsboro;
-    height: 200px;
+    height: 250px;
 
     /* center the content */
     display: flex;
