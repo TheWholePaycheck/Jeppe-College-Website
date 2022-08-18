@@ -82,6 +82,10 @@
     overflow: visible;
 }
 
+.logo-nav {
+    cursor: pointer;
+}
+
 .dropdown.drop .dropdown-links {
     opacity: 1;
     z-index: 1;
