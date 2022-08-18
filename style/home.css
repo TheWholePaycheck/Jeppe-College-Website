@@ -114,7 +114,6 @@ section.accreditations {
     display: flex;
     flex-direction: column;
     transform: translateY(0);
-    gap: 25px;
 }
 
 /* courses section */
@@ -209,16 +208,16 @@ section.accreditations {
     }
 
     25% {
-        transform: translateY(-80px);
+        transform: translateY(-130%);
     }
 
     50% {
-        transform: translateY(-160px);
+        transform: translateY(-250%);
 
     }
 
     75% {
-        transform: translateY(-80px);
+        transform: translateY(-130%);
     }
 
 }
