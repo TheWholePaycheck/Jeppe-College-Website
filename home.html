@@ -231,7 +231,7 @@
         </div>
 
         <small class="attribution">Copyright Jeppe College 2022 | Built & Designed by <a
-                href="https://thewholepaycheck.studio" class="twp">TheWholeGodDamnPaycheck</a>
+                href="https://thewholepaycheck.studio" class="twp">TheWholeAmazingPaycheck</a>
         </small>
     </footer>
 
@@ -257,6 +257,9 @@
             images[i].classList.toggle("fade") 
             i += direction
         }, 2000)
+
+        // just playing around, doing a one liner :D
+        document.querySelector(".twp").innerText = `TheWhole${Array("GodDamn", "Blessed", "Thicc", "Damn", "Stacked", "Mighty", "Green")[Math.ceil(Math.random() * randomNames.length - 1)]}Paycheck`
     </script>
 </body>
 
