@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Education & Training Authority</title>
+        <link rel="stylesheet" href="../style/courses.css" type="text/css">
+
+        <!-- This is the google font called inter -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+        
+            .contact-banner{
+                background-color: gainsboro;
+                height: 70px;
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            .main-banner{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            ul{
+                list-style: none;
+                display: flex;
+                gap: 50px;
+                padding-right: 50px;
+            }
+            
+            ul li {
+                display: flex;
+                align-items: center;
+            }
+            
+            ul a {
+                text-decoration: none;
+                font-family: 'Inter';
+            }
+            
+            .contact-btn{
+                color: white;
+                background-color: navy;
+                padding:10px 30px;
+                font-weight: bold;
+            }
+            .text-slider{
+                color: yellow;
+            }
+            .btns{
+                color: white;
+                display: flex;
+                gap: 50px;
+                padding-left: 80px;
+                padding-top: 20px;
+            }
+            .btn-apply{
+                text-decoration: none;
+                color: white;
+                background-color: #1C1564;
+                padding: 10px 30px;
+            }
+            .btn-apply:hover{
+                background-color: yellow;
+                color: #1C1564;
+            }
+            .btn-courses{
+                text-decoration: none;
+                color: white;
+                background-color: #1C1564;
+                padding: 10px 30px;
+            }
+            .btn-courses:hover{
+                color: #1C1564;
+                background-color: yellow;
+                padding: 10px 30px;
+            
+            }
+            .main-mother{
+                padding-top: 150px;
+            
+                background: url(./images/backgroung-image.jpg);
+                background-size: cover;
+                background-position: center top;
+                height: 100vh;
+                
+            }
+            .bg-paragraph{
+            padding: 30px;
+            margin: 20px;
+            font-family: 'Inter';
+            }
+            
+            nav {
+                width: 100%;
+                position: fixed;
+                top: 0;
+                background-color: gainsboro;
+            }
+          
+    </style>
+    </head>
+
+    <body>
+        <div class="main-mother">
+            <nav>
+                <div class="contact-banner">
+        
+                    <img src="./icons/telephone.svg" width="25px"><a href="tel:+27478776337">+27478776337</a>
+                    <img src="./icons/email.svg" width="25px"><a href="mailto:jeppecollege.com">jeppecollege.com</a>
+            </div>
+        
+            <div class="main-banner">
+                <img src="./images/banner.png" alt="Jeppe college's banner" width="400px">
+                    <ul>
+                        <li> <a href="#">About Us</a> </li>
+                        <li> <a href="#"> Campuses</a><img src="./icons/caret-down.svg" width="20px"></li>
+                        <li> <a href="#">Galley </a> </li>
+                        <li> <a href="#" class="contact-btn">Contact Us</a> </li>
+                    </ul>   
+            </div>
+            </nav>
+            <h1 class="header">Sector Education & Training Athority (SETA)<br>National Qualifications: Certificates & Diplomas</h1>
+            <div class="btns">
+                <a href="#" class="btn-apply">APPLY</a>
+                <a href="#" class="btn-courses"> COURSES OFFERED</a>
+            </div>
+        </div>
+
+        <section class="education">            
+            <h2 class="sub-header">Education & Training Athority (SETA)</h2>
+            <p class="info">All the SETAs within the framework are expected to define and implement their own specific plans to ensure that 
+                people already working, or wanting to work within the sector have opportunities and advantages.Admission Requirements: Fundamental 
+                competenices in the areas of Communication, mathematic literacy and life skills at a NQF Level 3. 
+                The ability to use a personal computer, training band up to NQF Level 2, competent and computing at NQF Level 1.
+            </p>
+            
+            <table border="0" class="main-table"> 
+                <tr>
+                    <th width="1000" class="edu-header"><h2>PSETA - Public sector</h2></th>
+                    <th width="1000" class="edu-header"><h2>LGSETA - Local Government</h2></th>
+                </tr>
+
+                <tr>
+                    <td  class="edu-sub-header">Modules</td>
+                    <td  class="edu-sub-header">Modules</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <th width="1000" id="edu-saqa-module">SAQA ID</th>
+                                <th width="1000" id="edu-qual-module">Qualification Title</th>
+                                <th width="1000" id="edu-nqf-module">NFQ Level</th>
+                            </tr>
+                            <tr>
+                                <td >
+                                    <ol id="edc-saqa">
+                                        <li>57804</li>
+                                        <li>57824</li>
+                                        <li>50060</li>
+                                        <li>57897</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <ol  id="edc-qual">
+                                        <li>National Certificate: Public Administration</li>
+                                        <li>FET Certificate: Public Administration</li>
+                                        <li>National Certificate: Public Administration</li>
+                                        <li>National Diploma: Public Administration</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <ol  id="edc-saqa">
+                                        <li>Level 03: 157</li>
+                                        <li>Level 04: 146</li>
+                                        <li>Level 05: 141</li>
+                                        <li>Level 06: 240</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                   
+                    <td>
+                        <table>
+                            <tr>
+                                <th width="1000" id="edu-saqa-module">SAQA ID</th>
+                                <th width="1000" id="edu-qual-module">Qualification Title</th>
+                                <th width="1000" id="edu-nqf-module">NFQ Level</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol  id="edc-saqa">
+                                       <li>50372</li>
+                                       <li>50205</li>
+                                       <li>49554</li>
+                                       <li>57823</li>
+                                       <li>36437</li>
+                                       <li>64390</li>
+                                       <li>64870</li>
+                                       <li>48965</li>
+                                       <li>60529</li>
+                                       <li>58578</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <ol id="edc-qual">
+                                        <li>FET Certificates: Municipal Finance and Administration</li>
+                                        <li>National Certificates: Municipal Integrated Development Planning</li>
+                                        <li>National Diploma: Public Finance Management & Administration</li>
+                                        <li>National Certificates: Ward Committee Governance</li>
+                                        <li>National Certificates: Local Economic Development</li>
+                                        <li>National Certificates: Emergancy Services: Fire & Rescue Operations</li>
+                                        <li>FET Certificates: Generic Management: Disaster Risk Management</li>
+                                        <li>Certificate: Municipal Finance Management</li>
+                                        <li>National Certificate: Municipal Finance Management</li>
+                                        <li>National Certificate: Local Government Councillor Practice</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <ol  id="edc-saqa">
+                                        <li>Level 04: 157</li>
+                                        <li>Level 05: 160</li>
+                                        <li>Level 05: 260</li>
+                                        <li>Level 02: 120</li>
+                                        <li>Level 04: 163</li>
+                                        <li>Level 05: 130</li>
+                                        <li>Level 04: 150</li>
+                                        <li>Level 06: 166</li>
+                                        <li>Level 05: 140</li>
+                                        <li>Level 03: 122</li>
+
+                                    </ol>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+
+            <table border="0" class="main-table">         
+                <tr>
+                    <td width="1000" class="edu-header"><h2>CATHSETA - Hospitality and Tourism</h2></td>
+                    <td width="1000" class="edu-header"><h2>SABPP - Human Resource Management</h2></td>
+                </tr>
+
+                <tr>
+                    <td  class="edu-sub-header">Modules</td>
+                    <td  class="edu-sub-header">Modules</td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <th width="1000" id="edu-saqa-module">SAQA ID</th>
+                                <th width="1000" id="edu-qual-module">Qualification Title</th>
+                                <th width="1000" id="edu-nqf-module">NFQ Level</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol  id="edc-saqa">
+                                        <li>14110</li>
+                                        <li>14111</li>
+                                        <li>14116</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <ol id="edc-qual">
+                                        <li>National Certificate: Accommodation Services</li>
+                                        <li>National Certificate: Professional Cookery</li>
+                                        <li>National Certificate: Hospitality Reception</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <ol  id="edc-saqa">
+                                        <li>Level 02: 120</li>
+                                        <li>Level 04: 211</li>
+                                        <li>Level 04: 126</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </table> 
+                    </td>
+                
+                    <td>
+                        <table>
+                            <tr>
+                                <th width="1000" id="edu-saqa-module">SAQA ID</th>
+                                <th width="1000" id="edu-qual-module">Qualification Title</th>
+                                <th width="1000" id="edu-nqf-module">NFQ Level</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol  id="edc-saqa">
+                                        <li>49691</li>
+                                        <li>49692</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <ol id="edc-qual">
+                                        <li>FET Certificate: HR Management & Practice Support</li>
+                                        <li>National Certificate: HR & Practice</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <ol  id="edc-saqa">
+                                        <li>Level 04: 140</li>
+                                        <li>Level 05: 249</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </table>  
+                </td>
+            </table>
+
+            
+            <table border="0" class="main-table">         
+                
+            </table>
+        </section>
+
+                   
+
+        <script src="./chatbot.js"></script>
+    </body>
+</html>
