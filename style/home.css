@@ -232,19 +232,29 @@ section.accreditations {
 
 }
 
-.marquee-left {
-    filter: grayscale(1);
+/* styling the marquee section */
+.marquees {
     display: flex;
-    align-items: center;
-    animation: marquee-left 60s linear infinite forwards;
+    flex-direction: column;
+    gap: 30px; /* add space between the marquees*/
 }
 
-.marquee-right {
-    filter: grayscale(1);
+.marquee-left, .marquee-right {
+    filter: grayscale(1); 
     display: flex;
+    gap: 50px;
     align-items: center;
-    justify-content: flex-end;
-    animation: marquee-right 60s linear infinite forwards;
+}
+
+/* goes left */
+.marquee-left {
+    animation: marquee-left 100s linear infinite forwards;
+}
+
+/* goes right */
+.marquee-right {
+    justify-content: flex-end; /* contents starts from the right */
+    animation: marquee-right 100s linear infinite forwards;
 }
 
 /* animation keyframes for the marquue effect */
@@ -254,7 +264,7 @@ section.accreditations {
     }
 
     to {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
@@ -264,7 +274,7 @@ section.accreditations {
     }
 
     to {
-        transform: translateX(100%);
+        transform: translateX(50%);
     }
 }
 
@@ -285,6 +295,10 @@ section.accreditations {
 @media screen and (max-width: 768px) {
     .course-content {
         transform: none;
+    }
+
+    .course:hover {
+        background-size: 180%;   
     }
 
     /* marquee animation should be faster on smaller devices */
