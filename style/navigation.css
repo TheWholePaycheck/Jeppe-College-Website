@@ -134,6 +134,11 @@
     color: #1C1564;
     background-color: yellow;
     padding: 10px 20px;
+
+    /* add spacing between icon and text */
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .menu-link-main:hover {
