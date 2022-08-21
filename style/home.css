@@ -214,6 +214,10 @@ section.accreditations {
     background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/stacked-books_DGF2LFZ6JJ.jpg");
 }
 
+.course.six {
+    background-image: url("https://www.saps.gov.za/resource_centre/publications/photo_album/images/Img023.jpg");
+}
+
 .course:hover {
     background-size: 150%;
 }
