@@ -303,6 +303,12 @@ section.accreditations {
 
     .hero-title {
         font-size: 34px;
+        line-height: 50px;
+    }
+
+    /* the line height should stay the same, to avoid messing up the animation */
+    .text-slider-track {
+        line-height: 70px;
     }
 }
 
