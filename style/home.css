@@ -1,5 +1,7 @@
 body, html {
     overflow-x: hidden;
+    scroll-behavior: smooth; /* make the auto scroll smooth */
+    scroll-padding-top: 200px;
 }
 
 section.courses,
