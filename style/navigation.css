@@ -245,11 +245,23 @@
 }
 
 @media screen and (max-width: 855px) {
+    /* due to the banner image changing size, increase padding */
+    html, body {
+        scroll-padding-top: 250px;
+    }
+
     .logo-nav {
-        width: 80%;
+        width: 450px
     }
 
     .menu-mobile {
         padding-right: 20px;
+    }
+}
+
+/* make the logo responsive for smaller devices */
+@media screen and (max-width: 610px) {
+    .logo-nav {
+        width: 80%;
     }
 }
