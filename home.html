@@ -29,6 +29,8 @@
     <!-- link the css of the slider animation library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+    <!-- link splide, for touch slider feature -->
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -201,6 +203,111 @@
         </div>
     </section>
 
+    <section class="campuses">
+        <h2 class="section-title">Our Campuses</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="campus">
+                        <img src="./images/campuses/nelspruit.png" alt="a photo of one of Jeppe College's campuses located in " width="100%" class="campus-img">
+                        
+                        
+                        <div class="campus-details">
+                            <h3 class="campus-name-title">Nelspruit</h3>
+                            <p class="campus-address">
+                                Address not found
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="campus">
+                        <img src="./images/campuses/bloem.jpg" alt="a photo of one of Jeppe College's campuses located in " width="100%" class="campus-img">
+                        
+                        
+                        <div class="campus-details">
+                            <h3 class="campus-name-title">Bloemfontein</h3>
+                            <p class="campus-address">
+                                103 St. Andrews Cnr West Burger Street <br>
+                                Bloemfontein, 9300 <br>
+                                Tel: 051 430 6312 <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="campus">
+                        <img src="./images/campuses/jhb.jpg" alt="a photo of one of Jeppe College's campuses located in " width="100%" class="campus-img">
+                        
+                        
+                        <div class="campus-details">
+                            <h3 class="campus-name-title">Johannesburg</h3>
+                            <p class="campus-address">
+                                222 Marshall Street Cnr Nugget Street <br>
+                                Tel: 011 334 2751 <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="campus">
+                        <img src="./images/campuses/polokwane.png" alt="a photo of one of Jeppe College's campuses located in " width="100%" class="campus-img">
+                        
+                        <div class="campus-details">
+                            <h3 class="campus-name-title">Polokwane</h3>
+                            <p class="campus-address">
+                                13A Grobler Street Cnr <br>
+                                Church Street <br>
+                                Tel: 015 291 5707 <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="campus">
+                        <img src="./images/campuses/vereeniging.jpg" alt="a photo of one of Jeppe College's campuses located in " width="100%" class="campus-img">
+                        
+                        <div class="campus-details">
+                            <h3 class="campus-name-title">Vereeniging</h3>
+                            <p class="campus-address">
+                                12 Beaconsfield Avenue <br>
+                                Vereeniging, 1930 <br>
+                                Tel: 016 422 2676 <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="campus">
+                        <img src="./images/campuses/rustenburg.png" alt="a photo of one of Jeppe College's campuses located in " width="100%" class="campus-img">
+                        
+                        <div class="campus-details">
+                            <h3 class="campus-name-title">Rustenburg</h3>
+                            <p class="campus-address">Somewhere in South Africa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>        
+        </div>
+    </section>
+
     <section class="accreditations">
         <h2 class="section-title">Accreditations</h2>
 
@@ -294,9 +401,41 @@
 
     <!-- add the scroll animation library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/swiper-bundle.min.js"></script>
 
     <script>
         AOS.init();
+
+        // initialize swiper
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            effect: 'cards',
+            initialSlide: 2,
+            slideToClickedSlide: true,
+            updateOnWindowResize: true,
+            autoplay: true,
+            
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints: {
+                830: {
+                    width: 600,
+                    height: 300
+                }
+            }
+        });
     </script>
 
 
