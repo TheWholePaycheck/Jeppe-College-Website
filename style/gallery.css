@@ -29,7 +29,7 @@
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
-  animation: animate 2s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: animate 2s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 @keyframes animate {
@@ -54,7 +54,7 @@
   display: flex;
   align-items: center;
   border-radius: 5px;
-  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1) , 0px 4px 6px -2px rgba(0,0,0,0.05);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .gallery-main-title {
@@ -88,32 +88,34 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 15px;
-  padding: 30px 0px; /* add spacing on the top and bottom*/
+  padding: 30px 0px;
+  /* add spacing on the top and bottom*/
 }
 
 .pic {
   height: 220px;
   cursor: pointer;
-  display: none; /* hide all pics by default*/
+  display: none;
+  /* hide all pics by default*/
 }
 
 .pic img {
   /* This is were all images were resize to the small radius square you see */
   width: 100%;
   height: 100%;
-  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1) , 0px 4px 6px -2px rgba(0,0,0,0.05);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
   object-fit: cover;
   transition: 200ms cubic-bezier(0.215, 0.610, 0.355, 1);
   border-radius: 20px;
 }
 
 /* highlight the selected trip */
-#check_0:checked ~ .container .trip-title:nth-of-type(1),
-#check_1:checked ~ .container .trip-title:nth-of-type(2),
-#check_2:checked ~ .container .trip-title:nth-of-type(3), 
-#check_3:checked ~ .container .trip-title:nth-of-type(4), 
-#check_4:checked ~ .container .trip-title:nth-of-type(5), 
-#check_5:checked ~ .container .trip-title:nth-of-type(6) {
+#check_0:checked~.container .trip-title:nth-of-type(1),
+#check_1:checked~.container .trip-title:nth-of-type(2),
+#check_2:checked~.container .trip-title:nth-of-type(3),
+#check_3:checked~.container .trip-title:nth-of-type(4),
+#check_4:checked~.container .trip-title:nth-of-type(5),
+#check_5:checked~.container .trip-title:nth-of-type(6) {
   background-color: yellow;
   font-weight: bold;
 }
@@ -122,17 +124,17 @@
 /* when clicked all the images will display */
 
 /*if the first checkbox is checked, show every trip */
-#check_0:checked ~ .container .image-gallery .pic {
+#check_0:checked~.container .image-gallery .pic {
   display: block;
 }
 
 /* if the second checkbox is checked, show cape town trips */
-#check_1:checked ~ .container .image-gallery .CapeTown {
+#check_1:checked~.container .image-gallery .CapeTown {
   display: block;
 }
 
 /* if the third checkbox is checked, show 'nambia' trips */
-#check_2:checked~.container .image-gallery .Nambia{
+#check_2:checked~.container .image-gallery .Nambia {
   display: block;
 }
 
@@ -147,7 +149,7 @@
 }
 
 /* if the sixth checkbox is checked, show graduation trips */
-#check_5:checked ~ .container .image-gallery .Graduation {
+#check_5:checked~.container .image-gallery .Graduation {
   display: block;
 }
 

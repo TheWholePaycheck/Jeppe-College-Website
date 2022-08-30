@@ -1,0 +1,315 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+.infor{
+    font-weight: 600;
+    padding: 10px;
+    margin: 3px;
+}
+table{
+    display: flex;
+    justify-content: center;
+}
+td{
+    text-align: center;
+}
+
+
+/*----policing----*/
+.pol-header-main{
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    margin: 14px;
+    font-weight: 900;
+    background-color: gold;
+}
+.pol-header{
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: gold;
+}
+#pol-Id-module{
+    background-color: navy;
+    color: white;
+    font-weight: 700;
+}
+#pol-qual-module{
+    font-weight: 700;
+}
+#pol-lev-module{
+    background-color: navy;
+    color: white;
+    font-weight: 600;
+}
+
+/*-------culinary-----*/
+.cul-header-main{
+    text-align: center;
+    background: yellow;
+    font-weight: 800;
+    padding: 12px;
+    margin: 14px;
+}
+.cul-header{
+    text-align: center;
+    background-color: gold;
+    font-weight: 500;
+}
+#cul-Id-module{
+    background-color: navy;
+    font-weight: 700;
+    color: white;
+}
+#cul-qual-module{
+    font-weight: 700;
+    background-color: yellow;
+}
+#cul-lev-module{
+    background-color: navy;
+    color: white;
+    font-weight: 600;
+}
+
+/*----engineering----*/
+.eng-header-main{
+    text-align: center;
+    background-color: red;
+    padding: 12px;
+    margin: 14px;
+    margin-top: 20px;
+    font-weight: 900;
+}
+.eng-header{
+    text-align: center;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin-top: 40px;
+    margin-left: 2px;
+}
+.module{
+    color: white;
+    text-align: left;
+    font-weight: 400;
+    padding-left: 20px;
+    background-color: blue;
+}
+#n1-module{
+    background-color: rgb(0, 255, 225);
+    font-weight: 700;
+}
+#n2-module{
+    background-color: rgb(242, 255, 0);
+    font-weight: 800;
+}
+#n3-module{
+    background-color: navy;
+    font-weight: 600;
+    color: white;
+}
+#n4-module{
+    background-color: blue;
+    color: white;
+    font-weight: 900;
+}
+#n5-module{
+    background-color: yellow;
+    font-weight: 700;
+}
+#n6-module{
+    background-color: blue;
+    color: white;
+}
+#eng-course{
+    list-style: none;
+    text-align: center;
+}
+
+
+/*----business---*/
+.bus-header-main{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    padding: 12px;
+    margin: 14px;
+    font-weight: 900;
+}
+.bus-header{
+    margin-top: 20px;
+    text-align: center;
+    background-color: navy;
+    color: white;
+}
+#bus-n4-module{
+    background-color: skyblue;
+    font-weight: 800;
+}
+#bus-n5-module{
+    font-weight: 900;
+}
+#bus-n6-module{
+    background-color: skyblue;
+    font-weight: 900;
+}
+#bus-course{
+    text-align: center;
+    list-style: none;
+}
+
+/*----technology-----*/
+.tech-header-main{
+    background-color: navy;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    padding: 12px;
+    margin: 14px;
+}
+.tech-header{
+    text-align: center;
+    background-color: blue;
+    color: white;
+    margin-top: 50px;
+}
+.level{
+    text-align: left;
+    background-color: yellow;
+    color: black;
+    padding-left: 20px;
+    font-weight: 900;
+}
+#SAQA-module{
+    background-color: navy;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+}
+#Career-module{
+    background-color: navy;
+    color: azure;
+    font-weight: 900;
+}
+
+
+/*----eduction-----*/
+.edu-header-main{
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    color: black;
+    font-weight: 800;
+    padding: 12px;
+    margin: 14px;
+}
+.edu-header{
+    text-align: center;
+    font-weight: 900;
+    background-color: rgba(0, 0, 255, 0.872);
+    color: white;
+    margin-top: 40px;
+}
+#edu-saqa-module{
+    text-align: center;
+    background-color: rgb(255, 251, 0);
+    font-weight: 800;
+}
+#edu-qual-module{
+    font-weight: 600;
+    background-color: navy;
+    color: blanchedalmond;
+}
+#edu-nqf-module{
+    background-color: rgb(255, 251, 0);
+}
+.contaner{
+    padding: 12px;
+    margin: 14px;
+}
+
+@media screen and (max-width: 450px) {
+    .infor{
+        font-weight: lighter;
+    }
+    .bus-header-main{
+        text-align: center;
+    }
+    .bus-header{
+        font-weight: 300;
+    }
+    .level{
+        font-weight: 600;
+    }
+    .edu-header-main{
+        text-align: center;
+    }
+    .edu-header{
+        margin-top: 10px;
+    }
+    .pol-header-main{
+        text-align: center;
+    }
+    .tech-header-main{
+        text-align: center;
+        font-weight: 500;
+    }
+    .course{
+        margin-top: 50px;
+    }
+}
+
+/*----Short courese----*/
+
+.short-header-main{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    font-weight: 900;
+    padding: 12px;
+    margin: 14px;
+}
+.short-header{
+    text-align: center;
+    background-color: yellow;
+    font-weight: 900;
+    margin-top: 25px;
+}
+.info{
+    background-color: white;
+    text-align: center;
+    font-weight: 100;
+}
+#document{
+    background-color: aqua;
+    font-weight: 600;
+}
+#core-module{
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+}
+#duration{
+    background-color: aqua;
+    font-weight: 600;
+}
+
+/*----used to add a large padding to the whole section----*/
+
+@media screen and (max-width: 855px){
+    .course{
+        margin-top: 240px;
+    }
+}
+
+@media screen and (min-width: 855px){
+    .course{
+        margin-top: 240px;
+    }
+}
