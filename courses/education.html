@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Jeppe College of Commerce and Computer Studies is a division of Jeppe Adult Education Center, a 2001 winner of the Guinness UDV Adult Literacy Award for a Unique and Independent Adult literacy provision in the inner city of Johannesburg.">
+    <meta name="description" content="Jeppe College of Commerce and Computer Studies is a division of Jeppe Adult Education Center, a 2001 winner of the Guinness UDV Adult Literacy Award for a Unique and Independent Adult literacy provision in the inner city of Johannesburg.">
 
-    <title>Jeppe College | Education & Training Authority Course</title>
+    <title>Course | Sector Education & Training Authority</title>
 
     <!-- add favicons -->
     <link rel="icon" href="../favicons/favicon.ico" sizes="any">
@@ -19,109 +18,150 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
-    <!-- linking the main files -->
-    <link rel="stylesheet" href="../style/courses.css">
+    <link rel="stylesheet" href="../style/home.css">
     <link rel="stylesheet" href="../style/fluid-font.css">
     <link rel="stylesheet" href="../style/navigation.css">
     <link rel="stylesheet" href="../style/footer.css">
 
     <!-- using bootstrap to add icons, simple way to add icons by just adding tags  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
+    
     <!-- link the css of the slider animation library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+
+    <!----link the css of the courses pages----->
+    <link rel="stylesheet" href="../style/course.css" type="text/css"/>
+
 </head>
 
 <body>
-    <div class="edu-header-main">
-        <h1>Sector Education & Training Athority (SETA)<br>National Qualifications: Certificates & Diplomas</h1>
-    </div>
-    <p class="infor">All the SETAs within the framework are expected to define and implement their own specific plans to
-        ensure that
-        people already working, or wanting to work within the sector have opportunities and advantages.Admission
-        Requirements: Fundamental
-        competenices in the areas of Communication, mathematic literacy and life skills at a NQF Level 3.
-        The ability to use a personal computer, training band up to NQF Level 2, competent and computing at NQF Level 1.
-    </p>
 
-    <section class="sub-section">
-        <div class="edu-header">
-            <h2>PSETA - Public sector</h2>
+    <div class="navigation-bar">
+        <!-- contact banner -->
+        <div class="contact-banner">
+            <a href="tel:0802300083"><i class="bi bi-telephone-fill"></i>0802300083</a>
+            <a href="mailto:jeppecollegeadmin@jeppecollege.co.za"><i class="bi bi-envelope-fill"></i>jeppecollegeadmin@jeppecollege.co.za</a>
+                    
+            <a href="https://wa.to?=0230322038"><i class="bi bi-whatsapp"></i>0230322038</a>
         </div>
 
-        <table border="1">
-            <tr>
-                <th width="1000px" id="edu-saqa-module">SAQA ID</th>
-                <th width="1000px" id="edu-qual-module">Qualification Title</th>
-                <th width="1000px" id="edu-nqf-module">NFQ Level</th>
-            </tr>
-
-            <tr>
-                <td>57804</td>
-                <td>National Certificate: Public Administration</td>
-                <td>Level 03: 157</td>
-            </tr>
-
-            <tr>
-                <td>57824</td>
-                <td>FET Certificate: Public Administration</td>
-                <td>Level 04: 146</td>
-            </tr>
-
-            <tr>
-                <td>50060</td>
-                <td>National Certificate: Public Administration</td>
-                <td>Level 05: 141</td>
-            </tr>
-
-            <tr>
-                <td>57897</td>
-                <td>National Diploma: Public Administration</td>
-                <td>Level 06: 240</td>
-            </tr>
-        </table>
-
-
-
-
-        <section class="sub-section">
-
-            <div class="edu-header">
-                <h2>CATHSETA - Hospitality and Tourism</h2>
+        <!-- the navigation menu -->
+        <nav class="navigation-menu">
+            <!-- left side of the navigation menu -->
+            <div class="nav-left-side">
+                <a href="../home.html">
+                    <img src="../images/banner.png" alt="logo of jeppe college" class="logo-nav" width="400px">
+                </a>
             </div>
 
-            <table border="1">
-                <tr>
-                    <th width="1000px" id="edu-saqa-module">SAQA ID</th>
-                    <th width="1000px" id="edu-qual-module">Qualification Title</th>
-                    <th width="1000px" id="edu-nqf-module">NFQ Level</th>
-                </tr>
+            <!-- right side of the navigation menu -->
+            <div class="nav-right-side">
+                <ul class="menu">
+                    <li><a href="#" class="menu-link">About Us</a></li>
+                    <li><a href="#" class="menu-link">Faculties</a></li>
+                    <li class="dropdown"> Gallery <i class="bi bi-caret-down-fill"></i></a>
+                        <div class="dropdown-links">
+                            <a href="#" class="menu-link">2020</a>
+                            <a href="#" class="menu-link">2021</a>
+                            <a href="#" class="menu-link">2022</a>
+                        </div>
+                    </li>
+                    <li><a href="#" class="menu-link-main"><i class="bi bi-telephone-fill"></i>Contact Us</a></li>
+                </ul>
 
-                <tr>
-                    <td>14110</td>
-                    <td>National Certificate: Accommodation Services</td>
-                    <td>Level 02: 120</td>
-                </tr>
+                <div class="menu-mobile">
+                    <i class="bi bi-list hamburger"></i>
+                    <i class="bi bi-x-lg close"></i>
 
-                <tr>
-                    <td>14111</td>
-                    <td>National Certificate: Professional Cookery</td>
-                    <td>Level 04: 211</td>
-                </tr>
+                    <div class="menu-dropdown-mobile">
+                        <a href="../contact.html">Contact Us</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Gallery</a>
+                    </div>
+                </div>
 
-                <tr>
-                    <td>14116</td>
-                    <td>National Certificate: Hospitality Reception</td>
-                    <td>Level 04: 126</td>
-                </tr>
-            </table>
+            </div>
+        </nav>
+    </div>
 
-
-            <section class="sub-section">
+    <section class="course">
+        <div class="edu-header-main">
+            <h1>Sector Education & Training Athority (SETA)<br>National Qualifications: Certificates & Diplomas</h1>
+        </div>
+            <p class="infor">All the SETAs within the framework are expected to define and implement their own specific plans to ensure that 
+                people already working, or wanting to work within the sector have opportunities and advantages.Admission Requirements: Fundamental 
+                competenices in the areas of Communication, mathematic literacy and life skills at a NQF Level 3. 
+                The ability to use a personal computer, training band up to NQF Level 2, competent and computing at NQF Level 1.
+            </p>
+            
+            <section class="contaner">  
                 <div class="edu-header">
+                    <h2>PSETA - Public sector</h2>
+                </div>
+                <table border="1" data-aos="fade-left">
+                    <tr>
+                        <th width="1000" id="edu-saqa-module">SAQA ID</th>
+                        <th width="1000" id="edu-qual-module">Qualification Title</th>
+                        <th width="1000" id="edu-nqf-module">NFQ Level</th>
+                    </tr>
+                    <tr>
+                        <td>57804</td>
+                        <td>National Certificate: Public Administration</td>
+                        <td>Level 03: 157</td>
+                    </tr>
+                    <tr>
+                        <td>57824</td>
+                        <td>FET Certificate: Public Administration</td>
+                        <td>Level 04: 146</td>
+                    </tr>        
+                    <tr>
+                        <td>50060</td>
+                        <td>National Certificate: Public Administration</td>
+                        <td>Level 05: 141</td>
+                    </tr>
+                    <tr>
+                        <td>57897</td>
+                        <td>National Diploma: Public Administration</td>
+                        <td>Level 06: 240</td>
+                    </tr>
+                </table>
+    
+                <div class="edu-header" data-aos="fade-right">
+                    <h2>CATHSETA - Hospitality and Tourism</h2>
+                </div>
+                <table border="1" data-aos="fade-left">
+                    <tr>
+                        <th width="1000" id="edu-saqa-module">SAQA ID</th>
+                        <th width="1000" id="edu-qual-module">Qualification Title</th>
+                        <th width="1000" id="edu-nqf-module">NFQ Level</th>
+                    </tr>
+    
+                    <tr>
+                        <td>14110</td>
+                        <td>National Certificate: Accommodation Services</td>
+                        <td>Level 02: 120</td>
+                    </tr>
+    
+                    <tr>
+                        <td>14111</td>
+                        <td>National Certificate: Professional Cookery</td>
+                        <td>Level 04: 211</td>
+                    </tr>
+    
+                    <tr>
+                        <td>14116</td>
+                        <td>National Certificate: Hospitality Reception</td>
+                        <td>Level 04: 126</td>
+                    </tr>
+                </table>
+    
+    
+    
+                <div class="edu-header" data-aos="fade-right">
                     <h2>SABPP - Human Resource Management</h2>
                 </div>
-                <table border="1">
+                <table border="1" data-aos="fade-left">
                     <tr>
                         <th width="1000" id="edu-saqa-module">SAQA ID</th>
                         <th width="1000" id="edu-qual-module">Qualification Title</th>
@@ -131,23 +171,23 @@
                         <td>49691</td>
                         <td>FET Certificate: HR Management & Practice Support</td>
                         <td>Level 04: 140</td>
+    
                     </tr>
+                    
                     <tr>
                         <td>49692</td>
                         <td>National Certificate: HR & Practice</td>
                         <td>Level 05: 249</td>
                     </tr>
+    
                 </table>
-            </section>
-
-
-            <section class="sub-section">
-                <div class="edu-header">
+    
+    
+    
+                <div class="edu-header" data-aos="fade-right">
                     <h2>LGSETA - Local Government</h2>
                 </div>
-
-
-                <table border="1">
+                <table border="1" data-aos="fade-left">
                     <tr>
                         <th width="1000" id="edu-saqa-module">SAQA ID</th>
                         <th width="1000" id="edu-qual-module">Qualification Title</th>
@@ -158,62 +198,140 @@
                         <td>FET Certificates: Municipal Finance and Administration</td>
                         <td>Level 04: 157</td>
                     </tr>
-
                     <tr>
                         <td>50205</td>
                         <td>National Certificates: Municipal Integrated Development Planning</td>
                         <td>Level 05: 160</td>
                     </tr>
-
                     <tr>
                         <td>49554</td>
                         <td>National Diploma: Public Finance Management & Administration</td>
                         <td>Level 05: 260</td>
                     </tr>
-
                     <tr>
                         <td>57823</td>
                         <td>National Certificates: Ward Committee Governance</td>
                         <td>Level 02: 120</td>
                     </tr>
-
                     <tr>
                         <td>36437</td>
                         <td>National Certificates: Local Economic Development</td>
                         <td>Level 04: 163</td>
                     </tr>
-
                     <tr>
                         <td>64390</td>
                         <td>National Certificates: Emergancy Services: Fire & Rescue Operations</td>
                         <td>Level 05: 130</td>
                     </tr>
-
                     <tr>
                         <td>64870</td>
                         <td>FET Certificates: Generic Management: Disaster Risk Management</td>
                         <td>Level 04: 150</td>
                     </tr>
-
                     <tr>
                         <td>48965</td>
                         <td>Certificate: Municipal Finance Management</td>
                         <td>Level 06: 166</td>
                     </tr>
-
                     <tr>
                         <td>60529</td>
                         <td>National Certificate: Municipal Finance Management</td>
                         <td>Level 05: 140</td>
                     </tr>
-
                     <tr>
                         <td>58578</td>
                         <td>National Certificate: Local Government Councillor Practice</td>
                         <td>Level 03: 122</td>
                     </tr>
-                </table>
+                </table> 
             </section>
+        </section>
+
+        <footer>
+            <div class="footer-menus">
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">Resources</h3>
+
+                    <ul class="footer-menu-links">
+                        <li><a href="#">Prospectus(PDF)</a></li>
+                        <li><a href="#">Past Papers</a></li>
+                        <li><a href="#">Scooby Doo</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">Gallery</h3>
+
+                    <ul class="footer-menu-links">
+                        <li><a href="#">2018</a></li>
+                        <li><a href="#">2019</a></li>
+                        <li><a href="#">2020</a></li>
+                        <li><a href="#">2021</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">Socials</h3>
+
+                    <ul class="footer-menu-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+
+        <small class="attribution">Copyright Jeppe College 2022 | Built & Designed by <a
+                href="https://thewholepaycheck.studio" class="twp">TheWholeAmazingPaycheck</a>
+        </small>
+    </footer>
+
+    <!-- link the chatbot -->
+    <script src="../scripts/chatbot.js"></script>
+
+    <!-- link the dropdown code -->
+    <script src="../scripts/dropdown.js"></script>
+
+    <!-- add the scroll animation library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    <!-- slideshow feature -->
+    <script>
+        // get all the images as array
+        const images = document.querySelectorAll('.slideshow-image')
+        let i = images.length - 1
+        let direction = -1
+        setInterval(() => {
+            if (i <= 1) {
+                direction = 1
+            } else if (i >= images.length - 2) {
+                direction = -1
+            }
+            
+            images[i].classList.toggle("fade") 
+            i += direction
+        }, 2000)
+
+        // only use slide in animation on smaller devices
+        const horizontalCoursesQuery = window.matchMedia("(min-width: 850px)")
+        const coursesCards = document.querySelectorAll(".course")
+        if (horizontalCoursesQuery.matches) {
+            // remove the fade in attributes
+            coursesCards.forEach(course => {
+                course.removeAttribute("data-aos")
+            })
+        }
+
+        // just playing around, doing a one liner :D
+        document.querySelector(".twp").innerText = `TheWhole${Array("GodDamn", "Blessed", "Thicc", "Damn", "Stacked", "Mighty", "Green")[Math.ceil(Math.random() * randomNames.length - 1)]}Paycheck`
+    </script>
 </body>
 
 </html>
