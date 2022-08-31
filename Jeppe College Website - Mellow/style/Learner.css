@@ -1,0 +1,14 @@
+body{
+    margin: 0.8px;
+    padding-top: 200px;
+}
+
+h1{
+    padding-top: 160;
+    font-family: Inter;
+    font-size: 70px;
+}
+
+ul{
+    padding-left: 20px;
+}
