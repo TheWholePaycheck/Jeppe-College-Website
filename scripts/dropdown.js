@@ -1,20 +1,20 @@
-// DROP DOWN FEATURE
-const dropdown = document.querySelector(".dropdown")
-let mouseIn = false
+// // DROP DOWN FEATURE
+// const dropdown = document.querySelector(".dropdown")
+// let mouseIn = false
 
-dropdown.addEventListener("mouseenter", () => {
-    mouseIn = true
-    dropdown.classList.add("drop")
-})
+// dropdown.addEventListener("mouseenter", () => {
+//     mouseIn = true
+//     dropdown.classList.add("drop")
+// })
 
-dropdown.addEventListener("mouseleave", () => {
-    mouseIn = false
-    setTimeout(() => {
-        if (mouseIn == false) {
-            dropdown.classList.remove("drop")
-        }
-    }, 350)
-})
+// dropdown.addEventListener("mouseleave", () => {
+//     mouseIn = false
+//     setTimeout(() => {
+//         if (mouseIn == false) {
+//             dropdown.classList.remove("drop")
+//         }
+//     }, 350)
+// })
 
 // MENU MOBILE DROPDOWN
 const hamburger = document.querySelector(".hamburger") // select the hamburger
