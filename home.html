@@ -23,11 +23,8 @@
     <link rel="stylesheet" href="./style/navigation.css">
     <link rel="stylesheet" href="./style/footer.css">
 
-    <!-- using bootstrap to add icons, simple way to add icons by just adding tags  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    
     <!-- link the css of the slider animation library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="./style/aos.css" rel="stylesheet" />
 
     <!-- link splide, for touch slider feature -->
     <link rel="stylesheet" href="./style/swiper-bundle.min.css">
@@ -38,10 +35,20 @@
     <div class="navigation-bar">
         <!-- contact banner -->
         <div class="contact-banner">
-            <a href="tel:0106340045"><i class="bi bi-telephone-fill"></i>010 634 0045</a>
-            <a href="mailto:register@jeppecollege.co.za"><i class="bi bi-envelope-fill"></i>register@jeppecollege.co.za</a>
+            <a href="tel:0106340045">
+                <img src="./icons/telephone-white.svg" alt="telephone-icon" width="20px">
+                010 634 0045
+            </a>
+            
+            <a href="mailto:register@jeppecollege.co.za">
+                <img src="./icons/email-white.svg" alt="email-icon" width="20px">
+                register@jeppecollege.co.za
+            </a>
                     
-            <a href="https://wa.to?=0760455088"><i class="bi bi-whatsapp"></i>076 045 5088</a>
+            <a href="https://wa.me/0760455088">
+                <img src="./icons/whatsapp.svg" alt="email-icon" width="20px">
+                076 045 5088
+            </a>
         </div>
 
         <!-- the navigation menu -->
@@ -56,29 +63,26 @@
             <!-- right side of the navigation menu -->
             <div class="nav-right-side">
                 <ul class="menu">
-                    <li><a href="#" class="menu-link">About Us</a></li>
-                    <li><a href="#" class="menu-link">Faculties</a></li>
-                    <li class="dropdown"> Gallery <i class="bi bi-caret-down-fill"></i></a>
-                        <div class="dropdown-links">
-                            <a href="#" class="menu-link">2020</a>
-                            <a href="#" class="menu-link">2021</a>
-                            <a href="#" class="menu-link">2022</a>
-                        </div>
+                    <li><a href="./about.html" class="menu-link">About Us</a></li>
+                    <li><a href="./gallery.html" class="menu-link">Gallery</a></li>
+                    <li>
+                        <a href="./contact.html" class="menu-link-main">
+                            <img src="./icons/telephone.svg" alt="telephone-icon" width="25px">
+                            Contact Us
+                        </a>
                     </li>
-                    <li><a href="#" class="menu-link-main"><i class="bi bi-telephone-fill"></i>Contact Us</a></li>
                 </ul>
 
                 <div class="menu-mobile">
-                    <i class="bi bi-list hamburger"></i>
-                    <i class="bi bi-x-lg close"></i>
+                    <img src="./icons/hamburger.svg" class="hamburger" alt="hamburger icon" width="45px">
+                    <img src="./icons/close.svg" class="close" alt="close hamburger icon" width="45px">
 
                     <div class="menu-dropdown-mobile">
                         <a href="/contact.html">Contact Us</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Gallery</a>
+                        <a href="./about.html">About Us</a>
+                        <a href="./gallery.html">Gallery</a>
                     </div>
                 </div>
-
             </div>
         </nav>
     </div>
@@ -110,7 +114,9 @@
         </h1>
 
         <div class="hero-btns">
-            <button class="primary-hero-btn">BECOME A STUDENT <span class="bi bi-arrow-right hero-right-arrow"></button>
+            <a href="https://ws3699yymwz.typeform.com/to/CBClFun3">
+                <button class="primary-hero-btn">BECOME A STUDENT <span class="bi bi-arrow-right hero-right-arrow"></button>
+            </a>
             <a href="#courses">
                 <button class="secondary-hero-btn">SEE COURSES</button>
             </a>
@@ -129,7 +135,7 @@
                         have an understanding of technical Engineering principles and skills.
                     </p>
 
-                    <a href="#">
+                    <a href="/courses/engineering.html">
                         <button class="course-btn">More about course &ThickSpace; <i class="bi bi-arrow-right"></i></button>
                     </a>
                 </div>
@@ -142,7 +148,7 @@
                         This qualification is designed to educate the learner how to utilize computers to fulfill regular business requirements and begin or enhance your career in the IT sector.
                     </p>
 
-                    <a href="#">
+                    <a href="/courses/technology.html">
                         <button class="course-btn">More about course &ThickSpace; <i class="bi bi-arrow-right"></i></button>
                     </a>
                 </div>
@@ -155,7 +161,7 @@
                         This qualification seeks to equip students with the knowledge and practical skills required to perform effectively as supervisors/junior level business managers or potential managers in establishments, control and effective management or private and public business ventures.
                     </p>
 
-                    <a href="#">
+                    <a href="/courses/bussiness.html">
                         <button class="course-btn">More about course &ThickSpace; <i class="bi bi-arrow-right"></i></button>
                     </a>
                 </div>
@@ -168,7 +174,7 @@
                         The fundamental principles and real-world applications of the culinary arts and food services sector will be introduced to the students.
                     </p>
 
-                    <a href="#">
+                    <a href="/courses/culinary.html">
                         <button class="course-btn">More about course &ThickSpace; <i class="bi bi-arrow-right"></i></button>
                     </a>
                 </div>
@@ -182,7 +188,7 @@
                         have and understanding of technical engineering principles and skills.
                     </p>
 
-                    <a href="#">
+                    <a href="/courses/education.html">
                         <button class="course-btn">More about course &ThickSpace; <i class="bi bi-arrow-right"></i></button>
                     </a>
                 </div>
@@ -192,11 +198,24 @@
                 <div class="course-content">
                     <h3 class="course-title">School of Policing SASSETA</h3>
                     <p class="course-summary">
-                        You'll get ncah cooldrink money :), just woza baba.
+                        Students are provided with eduaaon of the law's most valued persons.
                     </p>
 
-                    <a href="#">
+                    <a href="/courses/policing.html">
                         <button class="course-btn">More about course &ThickSpace; <i class="bi bi-arrow-right"></i></button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="course short-course" data-aos="fade-right">
+                <div class="course-content">
+                    <h3 class="course-title">Short Courses</h3>
+                    <p class="course-summary">
+                        We offer short courses for students to acquire knowledge and will be equiped with entry level skills for the the world of work.
+                    </p>
+
+                    <a href="/courses/short_courses.html">
+                        <button class="course-btn">See Short Course &ThickSpace; <i class="bi bi-arrow-right"></i></button>
                     </a>
                 </div>
             </div>
@@ -220,7 +239,9 @@
                         <div class="campus-details">
                             <h3 class="campus-name-title">Nelspruit</h3>
                             <p class="campus-address">
-                                Address not found
+                                Simunye Building 48 Anderson Street<br>
+                                Nelspruit 2100<br>
+                                Tel: 013 7522 407
                             </p>
                         </div>
                     </div>
@@ -236,7 +257,7 @@
                             <p class="campus-address">
                                 103 St. Andrews Cnr West Burger Street <br>
                                 Bloemfontein, 9300 <br>
-                                Tel: 051 430 6312 <br>
+                                Tel: 051 430 6312
                             </p>
                         </div>
                     </div>
@@ -251,7 +272,7 @@
                             <h3 class="campus-name-title">Johannesburg</h3>
                             <p class="campus-address">
                                 222 Marshall Street Cnr Nugget Street <br>
-                                Tel: 011 334 2751 <br>
+                                Tel: 011 334 2751
                             </p>
                         </div>
                     </div>
@@ -266,7 +287,7 @@
                             <p class="campus-address">
                                 13A Grobler Street Cnr <br>
                                 Church Street <br>
-                                Tel: 015 291 5707 <br>
+                                Tel: 015 291 5707
                             </p>
                         </div>
                     </div>
@@ -281,7 +302,7 @@
                             <p class="campus-address">
                                 12 Beaconsfield Avenue <br>
                                 Vereeniging, 1930 <br>
-                                Tel: 016 422 2676 <br>
+                                Tel: 016 422 2676
                             </p>
                         </div>
                     </div>
@@ -293,7 +314,11 @@
                         
                         <div class="campus-details">
                             <h3 class="campus-name-title">Rustenburg</h3>
-                            <p class="campus-address">Somewhere in South Africa</p>
+                            <p class="campus-address">
+                                52 Loop Street Mosque Plaza <br>
+                                Rustenburg Town <br>
+                                Tel: 014 594 2430
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -358,20 +383,16 @@
                 <h3 class="footer-menu-title">Resources</h3>
 
                 <ul class="footer-menu-links">
-                    <li><a href="#">Prospectus(PDF)</a></li>
+                    <li><a href="./resources/prospectus_web.pdf">Prospectus (PDF)</a></li>
                     <li><a href="#">Past Papers</a></li>
-                    <li><a href="#">Scooby Doo</a></li>
                 </ul>
             </div>
 
             <div class="footer-menu">
-                <h3 class="footer-menu-title">Gallery</h3>
+                <h3 class="footer-menu-title">Other Sources</h3>
 
                 <ul class="footer-menu-links">
-                    <li><a href="#">2018</a></li>
-                    <li><a href="#">2019</a></li>
-                    <li><a href="#">2020</a></li>
-                    <li><a href="#">2021</a></li>
+                    <li><a href="https://jeppeeducationcentre.co.za/">Jeppe College Education Center</a></li>
                 </ul>
             </div>
 
@@ -379,17 +400,16 @@
                 <h3 class="footer-menu-title">Socials</h3>
 
                 <ul class="footer-menu-links">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#"></a></li>
+                    <li><a href="https://www.facebook.com/pages/category/School/Jeppe-Colleges-108707077146913/">Facebook</a></li>
+                    <li><a href="https://za.linkedin.com/school/jeppe-college-of-commerce-and-computer-studies-jeppe/">LinkedIn</a></li>
+                    <li><a href="https://www.academiccourses.co.za/universities/South-Africa/Jeppe-College-Johannesburg/">Keystone Academic Courses</a></li>
                 </ul>
             </div>
 
         </div>
-        </div>
-
+        
         <small class="attribution">Copyright Jeppe College 2022 | Built & Designed by <a
-                href="https://thewholepaycheck.studio" class="twp">TheWholeAmazingPaycheck</a>
+                href="https://thewholepaycheck.studio" class="twp">TheWholePaycheck</a>
         </small>
     </footer>
 
@@ -401,7 +421,7 @@
     <script src="./scripts/dropdown.js"></script>
 
     <!-- add the scroll animation library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/aos.js"></script>
     <script src="./scripts/swiper-bundle.min.js"></script>
 
     <script>
@@ -429,13 +449,6 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-
-            breakpoints: {
-                830: {
-                    width: 600,
-                    height: 300
-                }
-            }
         });
     </script>
 
@@ -452,7 +465,8 @@
         }
 
         // just playing around, doing a one liner :D
-        document.querySelector(".twp").innerText = `TheWhole${Array("GodDamn", "Blessed", "Thicc", "Damn", "Stacked", "Mighty", "Green")[Math.ceil(Math.random() * randomNames.length - 1)]}Paycheck`
+        const randomNames = ["GodDamn", "Blessed", "Thicc", "Damn", "Stacked", "Mighty", "Green"]
+        document.querySelector(".twp").innerText = `TheWhole${randomNames[Math.ceil(Math.random() * randomNames.length - 1)]}Paycheck`
     </script>
 </body>
 

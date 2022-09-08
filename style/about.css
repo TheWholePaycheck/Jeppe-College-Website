@@ -1,73 +1,19 @@
-
-    *{
-        margin: 0;
-        padding: 0;
-    }
-
-h1{
-    font-family: Inter;
-    font-size:80px;
-    padding-top: 150px;
-    text-align: left;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.main-mother{
-    padding: 10px;
-    font-family: Inter;
+.page-title {
+    margin-top: 200px;
 }
 
-.sub-heading{
-    text-align: center;
+.page-content {
     padding: 20px;
-    font-family: Inter;
-    font-size: 50px;
-    color: #1C1564;
-    
 }
 
-span{
-    animation: blink 2s linear infinite;
-    color:goldenrod;
-    
-}
-
-@keyframes blink{
-    0%{opacity: 0;}
-    50%{opacity: .5;}
-    100%{opacity: 1;}
-}
-
-body{
-    padding: 10px;
-    text-align: left;
-
-}
-
-.sub-heading2{
-    padding: 10px;
-    font-size: 35px;
-}
-
-.sub-heading3{
-    padding: 10px;
-    font-size: 35px;
-}
-
-.sub-heading4{
-    padding: 10px;
-    font-size: 35px;
-}
-
-.sub-heading5{
-    padding: 10px;
-    font-size: 35px;
-}
-
-.subheading6{
-    padding: 10px;
-    font-size: 35px;
-}
-
-ul{
-    margin: 10px;
+.sub-heading {
+    margin-top: 40px;
+    margin-bottom: 10px;
 }

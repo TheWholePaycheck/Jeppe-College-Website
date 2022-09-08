@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.prometric{
+    margin-top: 150px;
+    padding: 15px;
+    background-color: #1500ffdc;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 79px;
+    color: white;
+}
+.section-prometric{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin: 20px;
+    font-size: 30px;
+}
+.sub-section-prometric{
+    text-align: center;
+    padding-top: 30px;
+}
+.prometic-info{
+    text-align: center;
+    font-size: 25px;
+    background-color: navy;
+    color: white;
+}
+.sub-prom{
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    background-color: yellow;
+}
+#table{
+   padding: 20px;
+}
+.links{
+    padding: 20px;
+    display: inline-block;
+}
+.foundation{
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+    
+}
+.foundation:hover{
+    color: red;
+    text-decoration: underline;
+}
+.prom-num{
+    text-align: center;
+}
+.porm-qaul{
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .prometric{
+        padding-top: 120px;
+    }
+}
+@media (max-width: 851px){
+    .prometric{
+        padding-top: 120px;
+    }
+}
