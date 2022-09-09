@@ -133,7 +133,7 @@ tr {
 
 @media (max-width: 888px) {
   .contact-box {
-    flex-direction: column;
+    flex-direction: column; 
   }
 }
 
@@ -145,5 +145,10 @@ tr {
   td,
   tr {
     display: block;
+  }
+}
+@media (max-width: 657px){
+  h1{
+    padding-top: 50px;
   }
 }
