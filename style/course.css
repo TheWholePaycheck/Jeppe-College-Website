@@ -161,6 +161,13 @@ td{
     text-align: center;
     list-style: none;
 }
+.bus-course{
+    padding-top: 250px;
+}
+.bus-contaner{
+    padding: 6px;
+    margin: 6px;
+}
 
 /*----technology-----*/
 .tech-header-main{
