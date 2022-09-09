@@ -316,6 +316,10 @@ td{
     .course{
         margin-top: 240px;
     }
+    .bus-course{
+        padding: 0;
+        margin: 0;
+    }
 }
 
 @media screen and (min-width: 855px){
