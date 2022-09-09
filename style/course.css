@@ -165,8 +165,8 @@ td{
     padding-top: 250px;
 }
 .bus-contaner{
-    padding: 6px;
-    margin: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
 }
 
 /*----technology-----*/
@@ -249,6 +249,9 @@ td{
     }
     .bus-header{
         font-weight: 300;
+    }
+    .bus-course{
+        margin: 5px;
     }
     .level{
         font-weight: 600;
