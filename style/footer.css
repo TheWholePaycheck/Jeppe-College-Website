@@ -3,6 +3,7 @@ footer {
     font-family: 'Inter', sans-serif;
     padding: 20px;
     border-top: double 2px yellow;
+    margin-top: 20px;
 }
 
 footer .footer-menus {
