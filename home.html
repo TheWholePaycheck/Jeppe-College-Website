@@ -480,12 +480,11 @@
     <script src="./scripts/slideshow.js"></script>
 
     <!-- link the dropdown code -->
-    <script src="./scripts/dropdown.js"></script>
+    <script src="./scripts/dropdown.js" defer></script>
 
     <!-- add the scroll animation library -->
     <script src="./scripts/aos.js"></script>
     <script src="./scripts/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/@sidsbrmnn/scrollspy@1.x/dist/scrollspy.min.js"></script>
     <script>
         AOS.init();
 
@@ -494,7 +493,7 @@
             // Optional parameters
             direction: 'horizontal',
             loop: true,
-            effect: 'flip',
+            effect: 'cards',
             initialSlide: 2,
             slideToClickedSlide: true,
             updateOnWindowResize: true,
