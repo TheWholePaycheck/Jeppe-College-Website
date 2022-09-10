@@ -24,14 +24,16 @@ td{
     padding: 12px;
     margin: 14px;
     font-weight: 900;
-    background-color: gold;
+    background-color: blue;
+    color: white;
 }
 .pol-header{
     text-align: center;
     font-weight: 500;
     padding: 10px;
     margin-top: 20px;
-    background-color: gold;
+    background-color: blue;
+    color: white;
 }
 #pol-Id-module{
     background-color: navy;
@@ -100,11 +102,13 @@ td{
     background-color: blue;
 }
 #n1-module{
-    background-color: rgb(0, 255, 225);
+    background-color: navy;
+    color: white;
     font-weight: 700;
 }
 #n2-module{
-    background-color: rgb(242, 255, 0);
+    background-color: red;
+    color: white;
     font-weight: 800;
 }
 #n3-module{
@@ -147,14 +151,16 @@ td{
     color: white;
 }
 #bus-n4-module{
-    background-color: skyblue;
+    background-color: navy;
+    color: white;
     font-weight: 800;
 }
 #bus-n5-module{
     font-weight: 900;
 }
 #bus-n6-module{
-    background-color: skyblue;
+    background-color: navy;
+    color: white;
     font-weight: 900;
 }
 #bus-course{
@@ -230,7 +236,7 @@ td{
 #edu-qual-module{
     font-weight: 600;
     background-color: navy;
-    color: blanchedalmond;
+    color: white;
 }
 #edu-nqf-module{
     background-color: rgb(255, 251, 0);
@@ -279,8 +285,7 @@ td{
 .short-header-main{
     display: flex;
     justify-content: center;
-    background-color: blue;
-    color: white;
+    background-color: yellow;
     font-weight: 900;
     padding: 12px;
     margin: 14px;
