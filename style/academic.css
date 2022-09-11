@@ -6,9 +6,14 @@
 body{
     margin: auto;
     font-family: Inter;
+    padding-top: 200px;
 }
 
-.header{
+img{
+    border-radius: 100px;
+}
+
+/* .header{
     font-family: Inter;
     font-size:35px;
     padding-top: 150px;
@@ -63,4 +68,4 @@ table>tbody>tr{
 
 table>tbody>tr:nth-child(even){
     background-color: rgb(238, 238, 238);
-}
+} */
