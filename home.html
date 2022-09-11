@@ -32,6 +32,22 @@
 
 <body>
 
+    <div class="popup-wrapper close">
+        <div class="popup">
+            <img src="./icons/close.svg" alt="close-icon" class="close-popup-btn">
+            <img src="./images/jeppe-poster.jpeg" alt="poster of jeppe college for celebrating 20 years" class="popup-cover">
+            
+            <div class="right-side">
+            <h3>Graduation Ceremony!</h3>
+                <small>
+                    Join us as we celebrate the ongoing success of our students as we bid them farewell on their journey to fulfill their dreams.
+                </small>
+
+                <button class="popup-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
     <div class="navigation-bar">
         <!-- contact banner -->
         <div class="contact-banner">
@@ -477,6 +493,8 @@
 
     <!-- link the chatbot -->
     <script src="//code.tidio.co/eaz0uyccdsp6salecxscjp44yrlqkg5q.js" async></script>
+    
+    <!-- link the slideshow script -->
     <script src="./scripts/slideshow.js"></script>
 
     <!-- link the dropdown code -->
@@ -529,6 +547,7 @@
         const randomNames = ["GodDamn", "Blessed", "Thicc", "Damn", "Stacked", "Mighty", "Green"]
         document.querySelector(".twp").innerText = `TheWhole${randomNames[Math.ceil(Math.random() * randomNames.length - 1)]}Paycheck`
     </script>
+    <script src="./scripts/popup.js" defer></script>
 </body>
 
 </html>
