@@ -173,6 +173,7 @@ td{
 .bus-contaner{
     padding-bottom: 6px;
     margin-bottom: 6px;
+   
 }
 
 /*----technology-----*/
@@ -257,8 +258,9 @@ td{
         font-weight: 300;
     }
     .bus-course{
-        margin: 5px;
+        padding-top: 200px;
     }
+
     .level{
         font-weight: 600;
     }
@@ -320,10 +322,6 @@ td{
 @media screen and (max-width: 855px){
     .course{
         margin-top: 240px;
-    }
-    .bus-course{
-        padding: 0;
-        margin: 0;
     }
 }
 
