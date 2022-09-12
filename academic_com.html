@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,76 +17,20 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="../style/home.css">
-        <link rel="stylesheet" href="../style/fluid-font.css">
-        <link rel="stylesheet" href="../style/navigation.css">
-        <link rel="stylesheet" href="../style/footer.css">
-        <link rel="stylesheet" href="../style/course.css">
+
+        <link rel="stylesheet" href="./style/fluid-font.css">
+        <link rel="stylesheet" href="./style/navigation.css">
+        <link rel="stylesheet" href="./style/footer.css">
         <link rel="stylesheet" href="./style/academic.css">
 
         <!-- link the css of the slider animation library -->
         <link href="./style/aos.css" rel="stylesheet" />
 
         <!-- link splide, for touch slider feature -->
-        <link rel="stylesheet" href="../style/swiper-bundle.min.css">
+        <link rel="stylesheet" href="./style/swiper-bundle.min.css">
     </head>
 
     <body>
-
-        <div class="navigation-bar">
-            <!-- contact banner -->
-            <div class="contact-banner">
-                <a href="tel:0106340045">
-                    <img src="../icons/telephone-white.svg" alt="telephone-icon" width="20px">
-                    010 634 0045
-                </a>
-                
-                <a href="mailto:register@jeppecollege.co.za">
-                    <img src="../icons/email-white.svg" alt="email-icon" width="20px">
-                    register@jeppecollege.co.za
-                </a>
-                        
-                <a href="https://wa.me/0760455088">
-                    <img src="../icons/whatsapp.svg" alt="email-icon" width="20px">
-                    076 045 5088
-                </a>
-            </div>
-
-            <!-- the navigation menu -->
-            <nav class="navigation-menu">
-                <!-- left side of the navigation menu -->
-                <div class="nav-left-side">
-                    <a href="../home.html">
-                        <img src="../images/banner.png" alt="logo of jeppe college" class="logo-nav" width="400px">
-                    </a>
-                </div>
-
-                <!-- right side of the navigation menu -->
-                <div class="nav-right-side">
-                    <ul class="menu">
-                        <li><a href="../about.html" class="menu-link">About Us</a></li>
-                        <li><a href="../gallery.html" class="menu-link">Gallery</a></li>
-                        <li>
-                            <a href="../contact.html" class="menu-link-main">
-                                <img src="../icons/telephone.svg" alt="telephone-icon" width="25px">
-                                Contact Us
-                            </a>
-                        </li>
-                    </ul>
-
-                    <div class="menu-mobile">
-                        <img src="../icons/hamburger.svg" class="hamburger" alt="hamburger icon" width="45px">
-                        <img src="../icons/close.svg" class="close" alt="close hamburger icon" width="45px">
-
-                        <div class="menu-dropdown-mobile">
-                            <a href="../contact.html">Contact Us</a>
-                            <a href="../about.html">About Us</a>
-                            <a href="../gallery.html">Gallery</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div> 
 
         <div class="navigation-bar">
             <!-- contact banner -->
@@ -143,6 +86,15 @@
                 </div>
             </nav>
         </div>
+
+
+
+        <div class="links">
+            <a href="http://" class="foundation">PR2F PRINCE2@ Foundation</a>
+            <br/>
+            <a href="http://" class="foundation">MORF Management of Risk@ Foundation</a>
+        </div>
+            
         <!----this is the Academic section------>
         <section class="academic-committee-section">
             <h2 class="section-title">Academic Committee</h2>
@@ -263,11 +215,18 @@
             </small>
         </footer>
 
-        <!-- This is the link for the animation -->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <!-- link the chatbot -->
+        <script src="//code.tidio.co/eaz0uyccdsp6salecxscjp44yrlqkg5q.js" async></script>
+        <script src="./scripts/slideshow.js"></script>
+
+        <!-- link the dropdown code -->
+        <script src="../scripts/dropdown.js"></script>
+
+        <!-- add the scroll animation library -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
         <script>
             AOS.init();
         </script>
-
     </body>
 </html>
