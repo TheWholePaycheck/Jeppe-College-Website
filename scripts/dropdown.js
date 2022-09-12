@@ -27,3 +27,18 @@ Array(hamburger, closeIcon).forEach(icon => {
         menu.classList.toggle("open") // add a class
     })
 })
+
+// SUBMENU DROPDOWN FEATURE 
+const submenuTitle = document.querySelector(".mobile-dropdown-menu-title")
+const submenuBtn = document.querySelector(".mobile-dropdown-menu-wrapper")
+
+submenuBtn.addEventListener("click", () => {
+    submenuTitle.classList.add("open");
+})
+
+// Closing the submenu
+const backToMenu = document.querySelector(".back-to-menu-btn")
+
+backToMenu.addEventListener("click", () => {
+    submenuTitle.classList.remove("open");
+})
