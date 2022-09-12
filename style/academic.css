@@ -10,7 +10,6 @@
 .section-title{
     display: flex;
     justify-content: center;
-    font-size: 100px;
     background-color: blue;
     color: yellow;
     padding: 20px;
