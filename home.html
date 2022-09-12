@@ -31,23 +31,6 @@
 </head>
 
 <body>
-
-    <div class="popup-wrapper close">
-        <div class="popup">
-            <img src="./icons/close.svg" alt="close-icon" class="close-popup-btn">
-            <img src="./images/jeppe-poster.jpeg" alt="poster of jeppe college for celebrating 20 years" class="popup-cover">
-            
-            <div class="right-side">
-            <h3>Graduation Ceremony!</h3>
-                <small>
-                    Join us as we celebrate the ongoing success of our students as we bid them farewell on their journey to fulfill their dreams.
-                </small>
-
-                <button class="popup-btn">Close</button>
-            </div>
-        </div>
-    </div>
-
     <div class="navigation-bar">
         <!-- contact banner -->
         <div class="contact-banner">
@@ -79,6 +62,7 @@
             <!-- right side of the navigation menu -->
             <div class="nav-right-side">
                 <ul class="menu">
+                    <li><a href="./apply.html" class="menu-link">Apply</a></li>
                     <li><a href="./about.html" class="menu-link">About Us</a></li>
                     <li><a href="./gallery.html" class="menu-link">Gallery</a></li>
                     <li>
@@ -255,7 +239,7 @@
                     </p>
 
                     <a href="/courses/short_courses.html">
-                        <button class="course-btn">See Short course</button>
+                        <button class="course-btn">See Short courses</button>
                     </a>
                 </div>
             </div>
@@ -547,7 +531,6 @@
         const randomNames = ["GodDamn", "Blessed", "Thicc", "Damn", "Stacked", "Mighty", "Green"]
         document.querySelector(".twp").innerText = `TheWhole${randomNames[Math.ceil(Math.random() * randomNames.length - 1)]}Paycheck`
     </script>
-    <script src="./scripts/popup.js" defer></script>
 </body>
 
 </html>
