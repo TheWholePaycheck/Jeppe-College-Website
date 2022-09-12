@@ -468,6 +468,24 @@ section.articles {
     }
 }
 
+/* make the popup responsive */
+@media screen and (max-width: 685px) {
+    .popup {
+        flex-direction: column;
+        max-width: 300px;
+        max-height:  500px;
+    }
+
+    .popup .right-side {
+        flex: 1;
+    }
+
+    /* Todo: make the cover responsive on mobile devices */
+    .popup-cover {
+        
+    }
+}
+
 /* make the courses card responsive */
 @media screen and (max-width: 450px) {
     .courses-container {
