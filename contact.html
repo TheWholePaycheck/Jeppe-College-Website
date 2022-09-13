@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | Jeppecollege</title>
+  <title>Contact Us | Jeppe College</title>
 
   <!-- add favicons -->
   <link rel="icon" href="./favicons/favicon.ico" sizes="any">
@@ -52,37 +52,73 @@
         <!-- left side of the navigation menu -->
         <div class="nav-left-side">
             <a href="./home.html">
-                <img src="./images/banner.png" alt="logo of jeppe college" class="logo-nav" width="400px">
+                <img src="./images/banner_celebration.png" alt="logo of jeppe college" class="logo-nav" width="400px">
             </a>
         </div>
 
-        <!-- right side of the navigation menu -->
-        <div class="nav-right-side">
-            <ul class="menu">
-                <li><a href="./about.html" class="menu-link">About Us</a></li>
-                <li><a href="./gallery.html" class="menu-link">Gallery</a></li>
-                <li>
-                    <a href="./contact.html" class="menu-link-main">
-                        <img src="./icons/telephone.svg" alt="telephone-icon" width="25px">
-                        Contact Us
-                    </a>
-                </li>
-            </ul>
+          <!-- right side of the navigation menu -->
+          <div class="nav-right-side">
+              <ul class="menu">
+                  <li><a href="./apply.html" class="menu-link">Apply</a></li>
+                  <li><a href="./about.html" class="menu-link">About Us</a></li>
+                  <li class="desktop-dropdown-menu-title">
+                      Courses 
+                      <img src="../icons/caret-down.svg">
 
-            <div class="menu-mobile">
-                <img src="./icons/hamburger.svg" class="hamburger" alt="hamburger icon" width="45px">
-                <img src="./icons/close.svg" class="close" alt="close hamburger icon" width="45px">
+                      <div class="desktop-dropdown-menu">
+                          <a class="desktop-dropdown-menu-link" href="./courses/business.html">Business</a>
+                          <a class="desktop-dropdown-menu-link" href="./courses/technology.html">Technology</a>
+                          <a class="desktop-dropdown-menu-link" href="./courses/policing.html">Policing</a>
+                          <a class="desktop-dropdown-menu-link" href="./courses/culinary.html">Culinary</a>
+                          <a class="desktop-dropdown-menu-link" href="./courses/education.html">Education</a>
+                          <a class="desktop-dropdown-menu-link" href="./courses/short_courses.html">Short Courses</a>
+                      </div>
+                  </li>
+                  <li><a href="./gallery.html" class="menu-link">Gallery</a></li> 
+                  <li>
+                      <a href="./contact.html" class="menu-link-main">
+                          <img src="./icons/telephone.svg" alt="telephone-icon" width="25px">
+                          Contact Us
+                      </a>
+                  </li>
+              </ul>
 
-                <div class="menu-dropdown-mobile">
-                    <a href="/contact.html">Contact Us</a>
-                    <a href="./about.html">About Us</a>
-                    <a href="./gallery.html">Gallery</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-</div>
+              <div class="menu-mobile">
+                  <img src="./icons/hamburger.svg" class="hamburger" alt="hamburger icon" width="45px">
+                  <img src="./icons/close.svg" class="close" alt="close hamburger icon" width="45px">
 
+                  <div class="menu-dropdown-mobile">
+                      <a href="./apply.html" style="color: yellow;">Apply</a>
+                      <a href="./contact.html">Contact Us</a>
+                      <a href="./about.html">About Us</a>
+                      <a href="./gallery.html">Gallery</a>
+                     
+                      <div class="mobile-dropdown-menu-title">
+                          <div class="mobile-dropdown-menu-wrapper">
+                              <p>
+                                  Courses
+                              </p>
+                              <img src="./icons/caret-down.svg">
+                          </div>
+
+                              <div class="mobile-dropdown-menu">
+                                  <p class="back-to-menu-btn">Back</p>
+
+                                  <a class="mobile-dropdown-menu-link" href="./courses/business.html">Business</a>
+                                  <a class="mobile-dropdown-menu-link" href="./courses/technology.html">Technology</a>
+                                  <a class="mobile-dropdown-menu-link" href="./courses/policing.html">Policing</a>
+                                  <a class="mobile-dropdown-menu-link" href="./courses/culinary.html">Culinary</a>
+                                  <a class="mobile-dropdown-menu-link" href="./courses/education.html">Education</a>
+                                  <a class="mobile-dropdown-menu-link" href="./courses/short_courses.html">Short Courses</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </nav>
+  </div>
+  
 
   <div class="container drop">
     <div data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1000">
@@ -169,7 +205,10 @@
   </script>
 
   <script src="./scripts/dropdown.js"></script>
-  <script src="./scripts/chatbot.js"></script>
+
+  <!-- link the chatbot -->
+  <script src="//code.tidio.co/eaz0uyccdsp6salecxscjp44yrlqkg5q.js" async></script>
+
 </body>
 
 </html>
