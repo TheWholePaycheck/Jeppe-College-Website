@@ -8,6 +8,7 @@
 .container {
   width: 100%;
   text-align: center;
+  margin-top: 250px;
 }
 
 .trip-input {
@@ -25,7 +26,7 @@
   position: absolute;
   width: 300px;
   height: 3px;
-  background-color: blue;
+  background-color: #1C1564;
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
@@ -45,6 +46,9 @@
     width: 500px;
   }
 }
+.dropdown-icon, .current-value {
+  display: none !important;
+}
 
 .trip-titles-container {
   background-color: rgb(242, 238, 238);
@@ -56,26 +60,32 @@
   align-items: center;
   border-radius: 5px;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: 150ms cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .gallery-main-title {
   height: 100%;
   background-color: lightgrey;
-  line-height: 60px;
-  padding: 0 50px;
   color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .trip-title {
   display: inline-block;
-  height: 120%;
+  height: 100%;
+  padding: 10px;
+  width: 100%;
   /*this margin should be removed when I add more trips went to  */
   /* this padding open the gap between the labels */
-  padding: 0 2px;
-  line-height: 60px;
-  color: blue;
+  color: #1C1564;
   cursor: pointer;
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .trip-title:hover {
@@ -89,8 +99,6 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 15px;
-  padding: 30px 0px;
-  /* add spacing on the top and bottom*/
 }
 
 .pic {
@@ -111,13 +119,13 @@
 }
 
 /* highlight the selected trip */
-#check_0:checked~.container .trip-title:nth-of-type(1),
-#check_1:checked~.container .trip-title:nth-of-type(2),
-#check_2:checked~.container .trip-title:nth-of-type(3),
-#check_3:checked~.container .trip-title:nth-of-type(4),
-#check_4:checked~.container .trip-title:nth-of-type(5),
-#check_5:checked~.container .trip-title:nth-of-type(6) {
-  background-color: yellow;
+#check_0:checked~.container .trip-title:nth-of-type(2),
+#check_1:checked~.container .trip-title:nth-of-type(3),
+#check_2:checked~.container .trip-title:nth-of-type(4),
+#check_3:checked~.container .trip-title:nth-of-type(5),
+#check_4:checked~.container .trip-title:nth-of-type(6),
+#check_5:checked~.container .trip-title:nth-of-type(7) {
+  /* background-color: yellow; */
   font-weight: bold;
 }
 
@@ -155,21 +163,39 @@
 }
 
 /* compatibilty with smaller devices betwem the range of 162px to 834px */
-@media (max-width: 834px) and (min-width: 162px){
+@media (max-width: 934px) and (min-width: 162px){
   .image-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
-    padding-top:300px ;
+    padding-top:20px ;
   }
 
   .trip-titles-container{
-    height: 60px;
+    height: 40px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
   }
+
   label{
     display: none;
   }
   
+  .trip-titles-container.drop {
+    height: 100%;
+  }
+  
+  .dropdown-icon, .current-value {
+    display: block !important;
+  }
+
+  .dropdown-icon {
+    cursor: pointer;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    transform: translate(-1%, -1%);
+  }
 }
