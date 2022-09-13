@@ -344,3 +344,9 @@
         width: 350px;
     }
 }
+
+@media screen and (max-width: 460px) {
+    .logo-nav {
+        width: 250px;
+    }
+}
