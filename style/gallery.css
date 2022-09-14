@@ -39,11 +39,11 @@
   }
 
   50% {
-    width: 300px;
+    width: 250px;
   }
 
   100% {
-    width: 500px;
+    width: 300px;
   }
 }
 .dropdown-icon, .current-value {
