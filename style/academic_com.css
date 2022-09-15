@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+html{
+    overflow-x: hidden;
+}
+.academic-committee-section{
+    padding-top: 150px;
+}
+.section-title{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    color: yellow;
+    padding: 20px;
+    margin: 20px;
+}
+.academic-committee-container{
+    padding: 20px;
+}
+.committee-image{
+    margin-top: 50px;
+    border-radius: 100px;
+}
+.committee-name{
+    font-size: 900;
+    font-family: 'Inter', sans-serif;
+}
+.committee-specialization{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+.committee-position{
+    font-family: 'Inter', sans-serif;
+    font-size: 500;
+}
+.heads_of_jeppe{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: auto;
+}
+.heads_of_jeppe .heads {
+    background-color: grey;
+    border-radius: 50px;
+    width: 500px;
+}    
+/* will be removed */
+.jeppe_department img{
+    height: 50px;
+}
