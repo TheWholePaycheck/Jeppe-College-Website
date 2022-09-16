@@ -3,6 +3,10 @@
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
+html{
+    background: url(../images/background.jpg);
+    background-size: cover;
+}
 .infor{
     font-weight: 600;
     padding: 10px;
@@ -16,130 +20,11 @@ td{
     text-align: center;
 }
 
-
-/*----policing----*/
-.pol-header-main{
-    display: flex;
-    justify-content: center;
-    padding: 12px;
-    margin: 14px;
-    font-weight: 900;
-    background-color: blue;
-    color: white;
-}
-.pol-header{
-    text-align: center;
-    font-weight: 500;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: blue;
-    color: white;
-}
-#pol-Id-module{
-    background-color: navy;
-    color: white;
-    font-weight: 700;
-}
-#pol-qual-module{
-    font-weight: 700;
-}
-#pol-lev-module{
-    background-color: navy;
-    color: white;
-    font-weight: 600;
-}
-
-/*-------culinary-----*/
-.cul-header-main{
-    text-align: center;
-    background: yellow;
-    font-weight: 800;
-    padding: 12px;
-    margin: 14px;
-}
-.cul-header{
-    text-align: center;
-    background-color: gold;
-    font-weight: 500;
-}
-#cul-Id-module{
-    background-color: navy;
-    font-weight: 700;
-    color: white;
-}
-#cul-qual-module{
-    font-weight: 700;
-    background-color: yellow;
-}
-#cul-lev-module{
-    background-color: navy;
-    color: white;
-    font-weight: 600;
-}
-
-/*----engineering----*/
-.eng-container{
-    background: url(../images/background.jpg);
-    padding-top: 100px;
-}
-.eng-header-main{
-    text-align: center;
-    background-color: red;
-    padding: 12px;
-    margin: 14px;
-    margin-top: 20px;
-    font-weight: 900;
-}
-.eng-header{
-    text-align: center;
-    background-color: red;
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    margin-top: 40px;
-    margin-left: 2px;
-}
-.module{
-    color: white;
-    text-align: left;
-    font-weight: 400;
-    padding-left: 20px;
-    background-color: blue;
-}
-#n1-module{
-    background-color: navy;
-    color: white;
-    font-weight: 700;
-}
-#n2-module{
-    background-color: red;
-    color: white;
-    font-weight: 800;
-}
-#n3-module{
-    background-color: navy;
-    font-weight: 600;
-    color: white;
-}
-#n4-module{
-    background-color: blue;
-    color: white;
-    font-weight: 900;
-}
-#n5-module{
-    background-color: yellow;
-    font-weight: 700;
-}
-#n6-module{
-    background-color: blue;
-    color: white;
-}
-#eng-course{
-    list-style: none;
-    text-align: center;
-}
-
-
 /*----business---*/
+.business{
+    padding-top: 150px;
+    font-weight: 700;
+}
 .bus-header-main{
     display: flex;
     justify-content: center;
@@ -148,7 +33,11 @@ td{
     margin: 14px;
     font-weight: 900;
 }
-.bus-header{
+.bus-container{
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+}
+.bus-sub-header{
     margin-top: 20px;
     text-align: center;
     background-color: navy;
@@ -171,17 +60,230 @@ td{
     text-align: center;
     list-style: none;
 }
-.bus-course{
-    padding-top: 250px;
+
+/*-------culinary-----*/
+.culinary{
+    padding-top: 180px;
+    font-weight: 600;
 }
-.bus-contaner{
-    padding-bottom: 6px;
-    margin-bottom: 6px;
-   
+.cul-header{
+    text-align: center;
+    background: navy;
+    color: white;
+    font-weight: 800;
+    padding: 12px;
+    margin: 14px;
+}
+.cul-sub-header{
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+.cul-container{
+    padding: 20px;
+}
+#cul-Id-module{
+    background-color: navy;
+    color: white;
+}
+#cul-qual-module{
+    background-color: yellow;
+}
+#cul-lev-module{
+    background-color: navy;
+    color: white;
+}
+
+/*----eduction-----*/
+.education{
+    padding-top: 150px;
+    font-weight: 600;
+}
+.edu-header{
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    font-weight: 800;
+    padding: 12px;
+    margin: 14px;
+}
+.edu-sub-header{
+    text-align: center;
+    font-weight: 900;
+    background-color: rgba(0, 0, 255, 0.872);
+    color: white;
+    margin-top: 40px;
+}
+#edu-saqa-module{
+    text-align: center;
+    background-color: rgb(255, 251, 0);
+    font-weight: 800;
+}
+#edu-qual-module{
+    font-weight: 600;
+    background-color: navy;
+    color: white;
+}
+#edu-nqf-module{
+    background-color: rgb(255, 251, 0);
+}
+.edu-container{
+    padding: 20px;
+}
+
+/*----engineering----*/
+.engineering{
+    padding-top: 150px;
+    font-weight: 600;
+}
+.eng-header{
+    text-align: center;
+    background-color: navy;
+    color: white;
+    padding: 12px;
+    margin: 14px;
+    margin-top: 20px;
+    font-weight: 900;
+}
+.eng-container{
+    padding: 20px;
+}
+.eng-sub-header{
+    text-align: center;
+    background-color: #1C1564;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin-top: 40px;
+    margin-left: 2px;
+}
+.module{
+    color: white;
+    text-align: left;
+    font-weight: 400;
+    padding-left: 20px;
+    background-color: blue;
+}
+#n1-module{
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+}
+#n2-module{
+    background-color: yellow;
+    font-weight: 600;
+}
+#n3-module{
+    background-color: blue;
+    font-weight: 600;
+    color: white;
+}
+#n4-module{
+    background-color: blue;
+    color: white;
+    font-weight: 900;
+}
+#n5-module{
+    background-color: yellow;
+    font-weight: 700;
+}
+#n6-module{
+    background-color: blue;
+    color: white;
+}
+#eng-course{
+    list-style: none;
+    text-align: center;
+}
+
+/*----policing----*/
+.policing{
+    padding-top: 150px;
+    font-weight: 700;
+}
+.pol-header{
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    margin: 14px;
+    font-weight: 900;
+    background-color: blue;
+    color: white;
+}
+.pol-container{
+    padding: 20px;
+}
+.pol-sub-header{
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #1C1564;
+    color: white;
+}
+#pol-Id-module{
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+}
+#pol-qual-module{
+    background-color: yellow;
+    font-weight: 700;
+}
+#pol-lev-module{
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+}
+
+/*----Short courese----*/
+.short{
+    padding-top: 150px;
+    font-weight: 600;
+}
+.short-header{
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    font-weight: 900;
+    padding: 12px;
+    margin: 14px;
+}
+.short-sub-header{
+    text-align: center;
+    background-color: yellow;
+    font-weight: 900;
+    margin-top: 25px;
+}
+.info{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+}
+.short-container{
+    padding: 20px;
+}
+#document{
+    background-color: #1C1564;
+    color: white;
+    font-weight: 600;
+}
+#core-module{
+    background-color: yellow;
+    font-weight: 600;
+}
+#duration{
+    background-color: #1C1564;
+    color: white;
+    font-weight: 600;
 }
 
 /*----technology-----*/
-.tech-header-main{
+.technology{
+    padding-top: 150px;
+    font-weight: 700;
+}
+.tech-header{
     background-color: navy;
     color: white;
     display: flex;
@@ -190,7 +292,10 @@ td{
     padding: 12px;
     margin: 14px;
 }
-.tech-header{
+.tech-container{
+    padding: 20px;
+}
+.tech-sub-header{
     text-align: center;
     background-color: blue;
     color: white;
@@ -214,132 +319,206 @@ td{
     color: azure;
     font-weight: 900;
 }
-
-
-/*----eduction-----*/
-.edu-header-main{
-    display: flex;
-    justify-content: center;
-    background-color: yellow;
-    color: black;
-    font-weight: 800;
-    padding: 12px;
-    margin: 14px;
-}
-.edu-header{
-    text-align: center;
+#Core-module{
+    background: yellow;
     font-weight: 900;
-    background-color: rgba(0, 0, 255, 0.872);
-    color: white;
-    margin-top: 40px;
-}
-#edu-saqa-module{
-    text-align: center;
-    background-color: rgb(255, 251, 0);
-    font-weight: 800;
-}
-#edu-qual-module{
-    font-weight: 600;
-    background-color: navy;
-    color: white;
-}
-#edu-nqf-module{
-    background-color: rgb(255, 251, 0);
-}
-.contaner{
-    padding: 12px;
-    margin: 14px;
 }
 
-@media screen and (max-width: 450px) {
+
+@media screen and (max-width: 450px){
+    html{
+        background: url(../images/background.jpg);
+        background-position: 45%;
+    }
     .infor{
-        font-weight: lighter;
+        font-weight: 400;
     }
-    .bus-header-main{
-        text-align: center;
-    }
-    .bus-header{
-        font-weight: 300;
-    }
-    .bus-course{
+    .short{
         padding-top: 200px;
+        font-weight: 100;
     }
-
-    .level{
+    .technology{
+        padding-top: 100px;
+        font-weight: 100;
+    }
+    .tech-header{
+        text-align: center;
         font-weight: 600;
     }
-    .edu-header-main{
-        text-align: center;
-    }
-    .edu-header{
-        margin-top: 10px;
-    }
-    .pol-header-main{
-        text-align: center;
-    }
-    .tech-header-main{
-        text-align: center;
-        font-weight: 500;
-    }
-    .course{
-        margin-top: 50px;
-    }
-    .eng-container{
-        padding-top: 100px;
+    .policing{
+        padding-top: 200px;
+        font-weight: 100;
     }
 }
 
-/*----Short courese----*/
+@media screen and (max-width: 680px) {
+    html{
+        background: url(../images/background.jpg);
+        background-position: 45%;
+    }
+    .infor{
+        font-weight: 400;
+    }
+    .short{
+        padding-top: 200px;
+        font-weight: 100;
+    }
+    .technology{
+        padding-top: 200px;
+        font-weight: 100;
+    }
+    .tech-header{
+        text-align: center;
+        font-weight: 600;
+    }
+    .policing{
+        padding-top: 200px;
+        font-weight: 100;
+    }
+}
 
-.short-header-main{
+@media screen and (max-width: 768px){
+    html{
+        background: url(../images/background.jpg);
+        background-position: 45%;
+    }
+    .infor{
+        font-weight: 400;
+    }
+    .short{
+        padding-top: 200px;
+        font-weight: 100;
+    }
+    .technology{
+        padding-top: 200px;
+        font-weight: 100;
+    }
+    .tech-header{
+        text-align: center;
+        font-weight: 600;
+    }
+    .policing{
+        padding-top: 200px;
+        font-weight: 100;
+    }
+}
+
+@media screen and (max-height: 825px) {
+    html{
+        background: url(../images/background.jpg);
+        background-position: 45%;
+    }
+    .infor{
+        font-weight: 400;
+    }
+    .short{
+        padding-top: 300px;
+        font-weight: 100;
+    }
+    .technology{
+        padding-top: 300px;
+        font-weight: 100;
+    }
+    .tech-header{
+        text-align: center;
+        font-weight: 600;
+    }
+    .policing{
+        padding-top: 200px;
+        font-weight: 100;
+    }
+}
+
+@media screen and (max-width: 905px){
+    html{
+        background: url(../images/background.jpg);
+        background-position: 45%;
+    }
+    .short{
+        padding-top: 300px;
+        font-weight: 100;
+    }
+    .technology{
+        padding-top: 250px;
+        font-weight: 100;
+    }
+    .infor{
+        font-weight: 400;
+    }
+    .tech-header{
+        text-align: center;
+        font-weight: 600;
+    }
+    .policing{
+        padding-top: 300px;
+        font-weight: 100;
+    }
+}
+
+
+@media screen and (max-width: 100px){
+    html{
+        background: url(../images/background.jpg);
+        background-position: 45%;
+    }
+    .short{
+        padding-top: 300px;
+        font-weight: 100;
+    }
+    .technology{
+        padding-top: 300px;
+        font-weight: 100;
+    }
+    .infor{
+        font-weight: 400;
+    }
+    .tech-header{
+        text-align: center;
+        font-weight: 600;
+    }
+    .policing{
+        padding-top: 300px;
+        font-weight: 100;
+    }
+}
+
+
+/*-----button section-----*/    
+
+.hero-btns {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    z-index: 1;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.hero-btns button {
+    padding: 10px 20px;
+    border: solid 4px transparent;
+    font-family: 'Inter', sans-serif;
+}
+
+.hero-btns .primary-hero-btn {
+    cursor: pointer;
     background-color: yellow;
     font-weight: 900;
-    padding: 12px;
-    margin: 14px;
 }
-.short-header{
-    text-align: center;
-    background-color: yellow;
+
+.hero-btns .secondary-hero-btn {
+    background-color: transparent;
     font-weight: 900;
-    margin-top: 25px;
+    border-color: yellow;
+    color: black;
 }
-.info{
-    background-color: white;
-    text-align: center;
-    font-weight: 100;
-}
-#document{
-    background-color: aqua;
-    font-weight: 600;
-}
-#core-module{
+
+.hero-btns .primary-hero-btn:hover{
     background-color: blue;
     color: white;
-    font-weight: 600;
-}
-#duration{
-    background-color: aqua;
-    font-weight: 600;
 }
 
-/*----used to add a large padding to the whole section----*/
-
-@media screen and (max-width: 855px){
-    .course{
-        margin-top: 240px;
-    }
-    .eng-container{
-        padding-top: 300px;
-    }
-}
-
-@media screen and (min-width: 855px){
-    .course{
-        margin-top: 240px;
-    }
-    .eng-container{
-        padding-top: 300px;
-    }
+.hero-btns .secondary-hero-btn:hover{
+    border-color: blue;
+    background-color: white;
 }
