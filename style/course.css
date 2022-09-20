@@ -6,6 +6,7 @@
 html{
     background: url(../images/background.jpg);
     background-size: cover;
+   
 }
 .infor{
     font-weight: 600;
@@ -24,6 +25,8 @@ td{
 .business{
     padding-top: 150px;
     font-weight: 700;
+    overflow-x: hidden;
+    
 }
 .bus-header{
     display: flex;
@@ -32,10 +35,12 @@ td{
     padding: 12px;
     margin: 14px;
     font-weight: 900;
+    
 }
 .bus-container{
     padding-bottom: 6px;
     margin-bottom: 6px;
+    padding: 20px;
 }
 .bus-sub-header{
     margin-top: 20px;
@@ -98,6 +103,7 @@ td{
 .education{
     padding-top: 150px;
     font-weight: 600;
+    overflow-x: hidden;
 }
 .edu-header{
     display: flex;
@@ -282,6 +288,7 @@ td{
 .technology{
     padding-top: 150px;
     font-weight: 700;
+    overflow: hidden;
 }
 .tech-header{
     background-color: navy;
@@ -576,7 +583,10 @@ td{
     }
     .bus-container{
         margin: auto;
-        font-size: 12px;
+        font-size: 13px;
+    }
+    .bus-sub-header{
+        font-weight: 200;
     }
     .culinary{
         padding-top: 240px;
@@ -616,6 +626,16 @@ td{
    
 }
 
+@media screen and (min-width: 900px) {
+    .engineering{
+        padding-top: 200px;
+    }
+    .technology{
+        padding-top: 250px;
+    }
+}
+
+
 /*-----button section-----*/    
 
 .hero-btns {
@@ -629,30 +649,16 @@ td{
 }
 
 .hero-btns button {
-    padding: 10px 20px;
+    padding: 10px;
     border: solid 4px transparent;
-    font-family: 'Inter', sans-serif;
+    position: fixed;
+    bottom: 8%;
 }
 
 .hero-btns .primary-hero-btn {
     cursor: pointer;
     background-color: yellow;
     font-weight: 900;
+    color: rgb(0, 0, 0);
 }
 
-.hero-btns .secondary-hero-btn {
-    background-color: transparent;
-    font-weight: 900;
-    border-color: yellow;
-    color: black;
-}
-
-.hero-btns .primary-hero-btn:hover{
-    background-color: blue;
-    color: white;
-}
-
-.hero-btns .secondary-hero-btn:hover{
-    border-color: blue;
-    background-color: white;
-}
