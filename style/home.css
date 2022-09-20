@@ -478,3 +478,27 @@ section.articles {
         flex-direction: column;
     }
 }
+
+/* the images that is going to pop up as a notification */
+.poster{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    z-index: 99999 ;
+}
+.poster.show{
+    display: block;
+}
+
+/* The hero buttons */
+.hero-btns{
+    position: fixed;
+    bottom: 0;
+    left: 35%;
+}
+.hero-btns :hover{
+    background-color: #1C1564;
+    color: #fff;
+    font-weight: 5000px;
+}
