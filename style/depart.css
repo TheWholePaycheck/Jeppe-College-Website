@@ -5,6 +5,12 @@
 
 }
 
+html{
+    background: url(../images/background.jpg);
+    background-size: cover;
+   
+}
+
 body{
     padding-top: 150px;
     font-family: 'Inter', sans-serif;
@@ -67,4 +73,28 @@ body{
     margin-top: 13px;
     font-size: 18px;
     line-height: 20px;
+}
+
+.hero-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    z-index: 1;
+    padding-top: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.hero-btns button {
+    padding: 10px;
+    border: solid 4px transparent;
+    position: fixed;
+    bottom: 8%;
+}
+
+.hero-btns .primary-hero-btn {
+    cursor: pointer;
+    background-color: yellow;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
 }
