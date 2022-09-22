@@ -54,17 +54,13 @@
         <nav class="navigation-menu">
             <!-- left side of the navigation menu -->
             <div class="nav-left-side">
-                <a href="./home.html">
+                <div class="notification-icon">1</div>
                     <img src="./images/banner_celebration.png" alt="logo of jeppe college" class="logo-nav" width="400px" class="pop_notification">
-                </a>
-                
-            
             </div>
 
             <!-- right side of the navigation menu -->
             <div class="nav-right-side">
                 <ul class="menu">
-                    <li><a href="./apply.html" class="menu-link">Apply</a></li>
                     <li><a href="./about.html" class="menu-link">About Us</a></li>
                     <li class="desktop-dropdown-menu-title">
                         Courses 
@@ -94,7 +90,6 @@
                     <img src="./icons/close.svg" class="close" alt="close hamburger icon" width="45px">
 
                     <div class="menu-dropdown-mobile">
-                        <a href="./apply.html" style="color: yellow;">Apply</a>
                         <a href="./contact.html">Contact Us</a>
                         <a href="./about.html">About Us</a>
                         <a href="./gallery.html">Gallery</a>
@@ -125,11 +120,11 @@
         </nav>
     </div>
 
-    <!-- The pop up nofitication with confetti -->
-    <div  class="poster" class="show">
+    <div id="popup">
+        <!--Notification logo  -->
         <img src="./images/20_years_logo.jpeg" alt="25 years celebration of jeppe college" onclick="Notification()">
 
-        <button class="close_btn" onclick="HideNotification()">CLOSE</button>
+        <button class="close-btn" onclick="HideNotification()">CLOSE</button>
     </div>
 
     <section class="hero-section">
@@ -580,19 +575,57 @@
         document.querySelector(".twp").innerText = `TheWhole${randomNames[Math.ceil(Math.random() * randomNames.length - 1)]}Paycheck`
     </script>
 
-    <!-- function for the notification -->
-    <script>
-       function Notification(){
-        let PosterElem = document.getElementsByClassName("poster")
 
-        PosterElem.classList.remove("show")
-       }
+<!-- function for the notification -->
+    <script src="./scripts/confetti.js"></script>
+
+    <script>
+        let popup = document.getElementById("popup")
+        let notificationIcon = document.querySelector(".notification-icon")
+
+        function Notification(){
+            popup.classList.add("show")
+            alert('hello!')
+
+        }
        
        function HideNotification(){
-           let PosterElem=document.getElementsByClassName("close_btn")
-
-           PosterElem.classList.remove("show")
+           popup.classList.remove("show")
         }
+
+        notificationIcon.addEventListener("click", function() {
+            // show the popup
+            popup.classList.add('show')
+        
+            var end = Date.now() + (15 * 600);
+
+            // go Buckeyes!
+            var colors = ['#ffff00', '#0000ff'];
+
+            (function frame() {
+            confetti({
+                particleCount: 2,
+                angle: 60,
+                spread: 55,
+                origin: { x: 0 },
+                colors: colors
+            });
+            confetti({
+                particleCount: 2,
+                angle: 120,
+                spread: 55,
+                origin: { x: 1 },
+                colors: colors
+            });
+
+            if (Date.now() < end) {
+                requestAnimationFrame(frame);
+            }
+            }())();
+
+        })
+
+        
     </script>
 </body>
 
