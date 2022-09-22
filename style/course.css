@@ -245,6 +245,7 @@ td{
 .short{
     padding-top: 150px;
     font-weight: 600;
+    overflow-x: hidden;
 }
 .short-header{
     display: flex;
@@ -628,9 +629,24 @@ td{
 
 @media screen and (min-width: 900px) {
     .engineering{
-        padding-top: 200px;
+        padding-top: 240px;
     }
     .technology{
+        padding-top: 250px;
+    }
+    .business{
+        padding-top: 250px;
+    }
+    .culinary{
+        padding-top: 250px;
+    }
+    .education{
+        padding-top: 250px;
+    }
+    .policing{
+        padding-top: 250px;
+    }
+    .short{
         padding-top: 250px;
     }
 }
@@ -652,7 +668,7 @@ td{
     padding: 10px;
     border: solid 4px transparent;
     position: fixed;
-    bottom: 8%;
+    bottom: 4%;
 }
 
 .hero-btns .primary-hero-btn {
