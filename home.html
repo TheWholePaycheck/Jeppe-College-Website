@@ -54,9 +54,10 @@
         <nav class="navigation-menu">
             <!-- left side of the navigation menu -->
             <div class="nav-left-side">
-                <div class="notification-icon">1</div>
-                    <img src="./images/banner_celebration.png" alt="logo of jeppe college" class="logo-nav" width="400px" class="pop_notification">
-            </div>
+                <!-- <div class="notification-icon">1</div> -->
+                    <img src="./images/banner_celebration.png" alt="logo of jeppe college" class="logo-nav" width="400px" class="pop_notification" onclick="Notification()"> 
+                    
+                </div>
 
             <!-- right side of the navigation menu -->
             <div class="nav-right-side">
@@ -131,9 +132,11 @@
         </nav>
     </div>
 
+    
     <div id="popup">
         <!--Notification logo  -->
-        <img src="./images/20_years_logo.jpeg" alt="25 years celebration of jeppe college" onclick="Notification()">
+        <img src="./images/20_years_logo.jpeg" alt="25 years celebration of jeppe college" >
+
 
         <button class="close-btn" onclick="HideNotification()">CLOSE</button>
     </div>
@@ -593,52 +596,59 @@
 
     <script>
         let popup = document.getElementById("popup")
-        let notificationIcon = document.querySelector(".notification-icon")
 
         function Notification(){
             popup.classList.add("show")
-            alert('hello!')
-
         }
        
        function HideNotification(){
            popup.classList.remove("show")
         }
-
-        notificationIcon.addEventListener("click", function() {
-            // show the popup
-            popup.classList.add('show')
         
-            var end = Date.now() + (15 * 600);
+        setTimeout(function(){
+            // show the popup
+            Notification()
+        
+        var end = Date.now() + (15 * 600);
 
-            // go Buckeyes!
-            var colors = ['#ffff00', '#0000ff'];
+        // go Buckeyes!
+        var colors = ['#ffff00', '#0000ff'];
 
-            (function frame() {
-            confetti({
-                particleCount: 2,
-                angle: 60,
-                spread: 55,
-                origin: { x: 0 },
-                colors: colors
-            });
-            confetti({
-                particleCount: 2,
-                angle: 120,
-                spread: 55,
-                origin: { x: 1 },
-                colors: colors
-            });
+        (function frame() {
+        confetti({
+            particleCount: 2,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0 },
+            colors: colors
+        });
+        confetti({
+            particleCount: 2,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1 },
+            colors: colors
+        });
 
-            if (Date.now() < end) {
-                requestAnimationFrame(frame);
-            }
-            }())();
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+        }())();
 
-        })
-
+        },5000)
         
     </script>
+
+    <!-- Changing notification image --> -->
+ <!-- <script> 
+        let banner = document.querySelector(".logo-nav")
+        // let banner = document.getElementsByClassName("logo-nav")
+
+        setTimeout(function(){
+            banner.src="banner_celebration_new-01.jpg"
+            // banner.add.Image("banner_celebration_new-01.jpg")
+        },5000)
+    </script> -->
 </body>
 
 </html>
