@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Jeppe College of Commerce and Computer Studies is a division of Jeppe Adult Education Center, a 2001 winner of the Guinness UDV Adult Literacy Award for a Unique and Independent Adult literacy provision in the inner city of Johannesburg.">
 
-        <title>Jeppe College | Academic Committee</title>
+        <title>Jeppe College | About</title>
 
         <!-- add favicons -->
         <link rel="icon" href="./favicons/favicon.ico" sizes="any">
@@ -17,17 +18,20 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
-
+        <link rel="stylesheet" href="./style/home.css">
         <link rel="stylesheet" href="./style/fluid-font.css">
         <link rel="stylesheet" href="./style/navigation.css">
         <link rel="stylesheet" href="./style/footer.css">
-        <link rel="stylesheet" href="./style/depart.css">
+        <link rel="stylesheet" href="./style/about.css">
 
         <!-- link the css of the slider animation library -->
         <link href="./style/aos.css" rel="stylesheet" />
 
         <!-- link splide, for touch slider feature -->
         <link rel="stylesheet" href="./style/swiper-bundle.min.css">
+    </head>
+
+    <body>
 
         <div class="navigation-bar">
             <!-- contact banner -->
@@ -56,82 +60,81 @@
                     </a>
                 </div>
     
+            
+        
                 <!-- right side of the navigation menu -->
-            <div class="nav-right-side">
-                <ul class="menu">
-                    <li><a href="./apply.html" class="menu-link">Apply</a></li>
-                    <li class="desktop-dropdown-menu-title">
-                    <a href="./about.html" class="menu-link">About Us</a>
-                        <img src="./icons/caret-down.svg">
-
-                        <div class="desktop-dropdown-menu">
-                            <a class="desktop-dropdown-menu-link" href="./department.html">Department JHB</a>
-                            <a class="desktop-dropdown-menu-link" href="./academic_com.html">Academic Commitee</a>
-                            <a class="desktop-dropdown-menu-link" href="./prometric.html">Prometric</a>
-                        </div>
-                    </li>
-                    <li class="desktop-dropdown-menu-title">
-                        Courses 
-                        <img src="./icons/caret-down.svg">
-
-                        <div class="desktop-dropdown-menu">
-                            <a class="desktop-dropdown-menu-link" href="./courses/business.html">Business</a>
-                            <a class="desktop-dropdown-menu-link" href="./courses/technology.html">Technology</a>
-                            <a class="desktop-dropdown-menu-link" href="./courses/policing.html">Policing</a>
-                            <a class="desktop-dropdown-menu-link" href="./courses/engineering.html">Engineering</a>
-                            <a class="desktop-dropdown-menu-link" href="./courses/culinary.html">Culinary</a>
-                            <a class="desktop-dropdown-menu-link" href="./courses/education.html">Education</a>
-                            <a class="desktop-dropdown-menu-link" href="./courses/short_courses.html">Short Courses</a>
-                        </div>
-                    </li>
-                    
-                    <li><a href="./gallery.html" class="menu-link">Gallery</a></li> 
-                    <li>
-                        <a href="./contact.html" class="menu-link-main">
-                            <img src="./icons/telephone.svg" alt="telephone-icon" width="25px">
-                            Contact Us
-                        </a>
-                    </li>
-                </ul>
-
-                <div class="menu-mobile">
-                    <img src="./icons/hamburger.svg" class="hamburger" alt="hamburger icon" width="45px">
-                    <img src="./icons/close.svg" class="close" alt="close hamburger icon" width="45px">
-
-                    <div class="menu-dropdown-mobile">
-                        <a href="./contact.html">Contact Us</a>
-                        <a href="./about.html">About Us</a>
-                        <a href="./gallery.html">Gallery</a>
-                       
-                        <div class="mobile-dropdown-menu-title">
-                            <div class="mobile-dropdown-menu-wrapper">
-                                <p>
-                                    Courses
-                                </p>
-                                <img src="./icons/caret-down.svg">
+                <div class="nav-right-side">
+                    <ul class="menu">
+                        <li><a href="./apply.html" class="menu-link">Apply</a></li>
+                        <li class="desktop-dropdown-menu-title">
+                        <a href="./about.html" class="menu-link">About Us</a>
+                            <img src="./icons/caret-down.svg">
+    
+                            <div class="desktop-dropdown-menu">
+                                <a class="desktop-dropdown-menu-link" href="./department.html">Department JHB</a>
+                                <a class="desktop-dropdown-menu-link" href="./academic_com.html">Academic Commitee</a>
+                                <a class="desktop-dropdown-menu-link" href="./prometric.html">Prometric</a>
                             </div>
-
-                                <div class="mobile-dropdown-menu">
-                                    <p class="back-to-menu-btn">Back</p>
-
-                                    <a class="mobile-dropdown-menu-link" href="./courses/business.html">Business</a>
-                                    <a class="mobile-dropdown-menu-link" href="./courses/technology.html">Technology</a>
-                                    <a class="mobile-dropdown-menu-link" href="./courses/policing.html">Policing</a>
-                                    <a class="mobile-dropdown-menu-link" href="./courses/engineering.html">Engineering</a>
-                                    <a class="mobile-dropdown-menu-link" href="./courses/culinary.html">Culinary</a>
-                                    <a class="mobile-dropdown-menu-link" href="./courses/education.html">Education</a>
-                                    <a class="mobile-dropdown-menu-link" href="./courses/short_courses.html">Short Courses</a>
+                        </li>
+                        <li class="desktop-dropdown-menu-title">
+                            Courses 
+                            <img src="./icons/caret-down.svg">
+    
+                            <div class="desktop-dropdown-menu">
+                                <a class="desktop-dropdown-menu-link" href="./courses/business.html">Business</a>
+                                <a class="desktop-dropdown-menu-link" href="./courses/technology.html">Technology</a>
+                                <a class="desktop-dropdown-menu-link" href="./courses/policing.html">Policing</a>
+                                <a class="desktop-dropdown-menu-link" href="./courses/engineering.html">Engineering</a>
+                                <a class="desktop-dropdown-menu-link" href="./courses/culinary.html">Culinary</a>
+                                <a class="desktop-dropdown-menu-link" href="./courses/education.html">Education</a>
+                                <a class="desktop-dropdown-menu-link" href="./courses/short_courses.html">Short Courses</a>
+                            </div>
+                        </li>
+                        
+                        <li><a href="./gallery.html" class="menu-link">Gallery</a></li> 
+                        <li>
+                            <a href="./contact.html" class="menu-link-main">
+                                <img src="./icons/telephone.svg" alt="telephone-icon" width="25px">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <div class="menu-mobile">
+                        <img src="./icons/hamburger.svg" class="hamburger" alt="hamburger icon" width="45px">
+                        <img src="./icons/close.svg" class="close" alt="close hamburger icon" width="45px">
+    
+                        <div class="menu-dropdown-mobile">
+                            <a href="./contact.html">Contact Us</a>
+                            <a href="./about.html">About Us</a>
+                            <a href="./gallery.html">Gallery</a>
+                           
+                            <div class="mobile-dropdown-menu-title">
+                                <div class="mobile-dropdown-menu-wrapper">
+                                    <p>
+                                        Courses
+                                    </p>
+                                    <img src="./icons/caret-down.svg">
                                 </div>
-                            </div>
+    
+                                    <div class="mobile-dropdown-menu">
+                                        <p class="back-to-menu-btn">Back</p>
+    
+                                        <a class="mobile-dropdown-menu-link" href="./courses/business.html">Business</a>
+                                        <a class="mobile-dropdown-menu-link" href="./courses/technology.html">Technology</a>
+                                        <a class="mobile-dropdown-menu-link" href="./courses/policing.html">Policing</a>
+                                        <a class="mobile-dropdown-menu-link" href="./courses/engineering.html">Engineering</a>
+                                        <a class="mobile-dropdown-menu-link" href="./courses/culinary.html">Culinary</a>
+                                        <a class="mobile-dropdown-menu-link" href="./courses/education.html">Education</a>
+                                        <a class="mobile-dropdown-menu-link" href="./courses/short_courses.html">Short Courses</a>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </div>
-
-    </head>
-
-    <body>
+            </nav>
+        </div> 
+    
         
             <div class="hero-btns">
                 <a href="../apply.html">
