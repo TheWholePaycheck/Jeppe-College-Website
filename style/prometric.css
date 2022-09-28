@@ -1,6 +1,15 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Inter',sans-serif;
+    
+}
+html{
+
+    background: url(../images/background.jpg);
+    background-size: cover;
+    font-weight: 600;
+
 }
 .prometric{
     margin-top: 150px;
