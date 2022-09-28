@@ -1,6 +1,13 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+html{
+    overflow-x: hidden;
+    background: url(../images/background.jpg);
+    background-size: cover;
+       
 }
 .about{
     padding-top: 200px;
