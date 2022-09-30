@@ -48,6 +48,13 @@ td{
     background-color: navy;
     color: white;
 }
+
+.bus-list{
+    padding-left: 40px;
+    margin: 10px;
+    font-size: 25px;
+}
+
 #bus-n4-module{
     background-color: navy;
     color: white;
