@@ -545,6 +545,21 @@ section.articles {
 }
 
 .secondary-hero-btn{
-    width: 189px;
+    width: 189px;  
+}
+
+.close-btn{
     
+    border-radius: 50px;
+    border: 0px;
+    border-width: 100px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: bolder;
+    width: 150px;
+
+}
+.close-btn:hover{
+    background-color: yellow;
+    color: white;
 }
