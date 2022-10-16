@@ -10,9 +10,35 @@ html{
 .bus-header{
     display: flex;
     justify-content: center;
-    background-color: skyblue;
+    background-color: navy;
+    color: white;
+    padding: 20px;
     font-size: 30px;
     font-weight: 400;
+}
+.level{
+    text-align: center;
+    background-color: yellow;
+    font-size: 30px;
+    font-weight: 700;
+}
+.information li{
+    list-style: none;
+    font-weight: 500;
+    text-align: center;
+}
+.information{
+    margin: 20px;
+}
+#bus-n4-module{
+    text-align: center;
+    background-color: navy;
+    color: white;
+}
+#bus-n6-module{
+    text-align: center;
+    background-color: navy;
+    color: white;
 }
 .about_business{
     padding-top: 200px;
@@ -23,7 +49,7 @@ html{
     display: flex;
     justify-content: space-between;
 }
-.information{
+.tuition{
     margin: 20px;
 }
 .header{
