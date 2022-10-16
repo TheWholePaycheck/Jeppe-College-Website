@@ -1,0 +1,130 @@
+/* use flexbox to add spacing around the page and between the groups of tables */
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background: white;
+    padding: 2rem;
+}
+
+
+/* font */
+.title, .date, th, h1, p, .event-title, .event-date, .close-popup-btn {
+    font-family: 'Inter', system-ui, Arial, Helvetica, sans-serif;
+}
+
+/* use flex box to horizontaly align the tables and add spacing between the tables */
+.months-container {
+    display: flex;
+    justify-content: space-between; /* spacing between tables*/
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* style the month div (thats wrapping each table)*/
+.month {
+    background-color: navy;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: white;
+}
+
+/* style the table cells */
+td {
+    padding: 10px;
+    border-radius: 4px;
+}
+
+th {
+    color: white;
+}
+
+/* any element with this class will be highlighted */
+.is-holiday {
+    transition: 100ms cubic-bezier(0.075, 0.82, 0.165, 1); /* smooth transition */
+    font-weight: bold;
+    background-color: yellow;
+    color: navy;
+}
+
+/* hover effect on cells that have the 'is-holiday' class */
+.is-holiday:hover {
+    cursor: pointer; /* change cursor on hover */
+    transform: scale(0.9); /* scale down on hover */
+}
+
+/* any cell that does not have the 'is-holiday' class will have this hover effect */
+td:not(.is-holiday):hover {
+    background-color: #3b3b3b54;
+}
+
+/* Remove the hover effect on the empty cells*/
+td.empty, td.empty:hover {
+  background-color: transparent;
+}
+
+.popup-background.hide {
+  display: none;
+}
+
+.popup-background {
+  background-color: #000000d9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  z-index: 888;
+  width: 100%;
+  height: 100%;
+}
+
+.popup {
+  width: 80%;
+  border-radius: 20px;
+  height: auto;
+  max-width: 900px;
+  background-color: white;
+
+  /* Center the popup content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 30px;
+  gap: 30px;
+}
+.popup-content-main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.close-popup-btn {
+  padding: 15px;
+  background-color: navy;
+  color: white;
+  border: solid 2px transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 200px;
+}
+
+.close-popup-btn:hover {
+  background-color: transparent;
+  color: navy;
+  border: solid 2px navy;
+}
+
+
+@media screen and (max-width: 500px) {
+  .popup {
+    align-items: center;
+  }
+
+  .close-popup-btn, .popup-btns {
+    width: 100%;
+  }
+}
