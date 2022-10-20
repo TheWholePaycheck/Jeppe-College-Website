@@ -7,6 +7,49 @@ html{
     background: url(../images/background.jpg);
     background-size: 2000px;
 }
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.tuition{
+    margin: 20px;
+}
+.header{
+    font-size: 40px;
+}
+.infor{
+    font-weight: 600;
+    padding-top: 30px;
+}
+.hero-btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    z-index: 1;
+    padding-top: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.hero-btn button {
+    padding: 10px;
+    border: solid 4px transparent;
+    position: fixed;
+    bottom: 4%;
+}
+
+.hero-btn .primary-hero-btn {
+    cursor: pointer;
+    background-color: yellow;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}
+
+
+
+/*---business---*/
+
 .bus-header{
     text-align: center;
     background-color: navy;
@@ -14,6 +57,46 @@ html{
     padding: 20px;
     font-size: 30px;
     font-weight: 400;
+}
+.bus-header{
+    display: flex;
+    justify-content: center;
+    background-color: navy;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#bus-n4-module{
+    text-align: center;
+    background-color: navy;
+    color: white;
+}
+#bus-n6-module{
+    text-align: center;
+    background-color: navy;
+    color: white;
+}
+.about_business{
+    padding-top: 200px;
+    margin: 20px;
+}
+.bus-career{
+    margin-top: 25px;
+    padding-left: 20px;
+}
+.career-infor{
+    margin: 4px;
+    padding-bottom: 20px;
+}
+.bus-list{
+    margin-left: 30px;
+    padding-top: 20px;
+}
+.about_business{
+    padding-top: 200px;
+    margin: 20px;
 }
 .level{
     text-align: center;
@@ -29,6 +112,10 @@ html{
 .information{
     margin: 20px;
 }
+
+
+/*---technology----*/
+
 .tech-sub-header{
     text-align: center;
     background-color: blue;
@@ -57,118 +144,9 @@ html{
     background: yellow;
     font-weight: 900;
 }
-.about_business{
-    padding-top: 200px;
-    margin: 20px;
-}
-.row{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-}
-.tuition{
-    margin: 20px;
-}
-.header{
-    font-size: 40px;
-}
-.infor{
-    font-weight: 600;
-    padding-top: 30px;
-}
-.bus-career{
-    margin-top: 25px;
-    padding-left: 20px;
-}
-.career-infor{
-    margin: 4px;
-    padding-bottom: 20px;
-}
-.bus-list{
-    margin-left: 30px;
-    padding-top: 20px;
-}
-.sub-header{
-    padding-top: 20px;
-    font-size: 40px;
-}
-.sub-head{
-    padding-top: 20px;
-    font-size: 25px;
-}
-.hero-btn {
-display: flex;
-flex-wrap: wrap;
-gap: 10px;
-z-index: 1;
-padding-top: 20px;
-padding-left: 20px;
-position: relative;
-}
 
-.hero-btn button {
-    padding: 10px;
-    border: solid 4px transparent;
-    position: fixed;
-    bottom: 4%;
-}
 
-.hero-btn .primary-hero-btn {
-    cursor: pointer;
-    background-color: yellow;
-    font-weight: 900;
-    color: rgb(0, 0, 0);
-}
-.bus-header{
-    display: flex;
-    justify-content: center;
-    background-color: navy;
-    color: white;
-    padding: 20px;
-    font-size: 30px;
-    font-weight: 400;
-}
-.level{
-    text-align: center;
-    background-color: yellow;
-    font-size: 30px;
-    font-weight: 700;
-}
-.information li{
-    list-style: none;
-    font-weight: 500;
-    text-align: center;
-}
-.information{
-    margin: 20px;
-}
-#bus-n4-module{
-    text-align: center;
-    background-color: navy;
-    color: white;
-}
-#bus-n6-module{
-    text-align: center;
-    background-color: navy;
-    color: white;
-}
-.about_business{
-    padding-top: 200px;
-    margin: 20px;
-}
-.bus-career{
-    margin-top: 25px;
-    padding-left: 20px;
-}
-.career-infor{
-    margin: 4px;
-    padding-bottom: 20px;
-}
-.bus-list{
-    margin-left: 30px;
-    padding-top: 20px;
-}
-
+/*---education----*/
 #edu-saqa-module{
     text-align: center;
     background-color: rgb(255, 251, 0);
@@ -187,7 +165,7 @@ position: relative;
 }
 
 
-
+/*----policing----*/
 #pol-Id-module{
     background-color: blue;
     color: white;
@@ -203,6 +181,8 @@ position: relative;
     font-weight: 600;
 }
 
+
+/*---culinary---*/
 #cul-Id-module{
     background-color: navy;
     color: white;
@@ -215,6 +195,8 @@ position: relative;
     color: white;
 }
 
+
+/*-----short_courses---*/
 #document{
     background-color: #1C1564;
     color: white;
@@ -230,17 +212,20 @@ position: relative;
     font-weight: 600;
 }
 
+
 @media screen and (max-width: 450px){
     .row{
         flex-direction: column;
     }
 }
+
 @media screen and (max-width: 680px){
     .row{
         flex-direction: column-reverse;
     }
   
 }
+
 @media screen and (max-width: 768px){
     html{
         background-size: cover;
@@ -281,6 +266,7 @@ position: relative;
     }
     
 }
+
 @media screen and (max-width: 900px){
     .row{
         flex-direction: column;
