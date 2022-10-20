@@ -10,9 +10,53 @@ html{
 .bus-header{
     display: flex;
     justify-content: center;
-    background-color: skyblue;
+    background-color: navy;
+    color: white;
+    padding: 20px;
     font-size: 30px;
     font-weight: 400;
+}
+.level{
+    text-align: center;
+    background-color: yellow;
+    font-size: 30px;
+    font-weight: 700;
+}
+.information li{
+    list-style: none;
+    font-weight: 500;
+    text-align: center;
+}
+.information{
+    margin: 20px;
+}
+.tech-sub-header{
+    text-align: center;
+    background-color: blue;
+    color: white;
+    margin-top: 50px;
+}
+.level{
+    text-align: center;
+    background-color: yellow;
+    color: black;
+    padding-left: 20px;
+    font-weight: 900;
+}
+#SAQA-module{
+    background-color: navy;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+}
+#Career-module{
+    background-color: navy;
+    color: azure;
+    font-weight: 900;
+}
+#Core-module{
+    background: yellow;
+    font-weight: 900;
 }
 .about_business{
     padding-top: 200px;
@@ -23,7 +67,7 @@ html{
     display: flex;
     justify-content: space-between;
 }
-.information{
+.tuition{
     margin: 20px;
 }
 .header{
@@ -76,6 +120,57 @@ position: relative;
     font-weight: 900;
     color: rgb(0, 0, 0);
 }
+.bus-header{
+    display: flex;
+    justify-content: center;
+    background-color: navy;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.level{
+    text-align: center;
+    background-color: yellow;
+    font-size: 30px;
+    font-weight: 700;
+}
+.information li{
+    list-style: none;
+    font-weight: 500;
+    text-align: center;
+}
+.information{
+    margin: 20px;
+}
+#bus-n4-module{
+    text-align: center;
+    background-color: navy;
+    color: white;
+}
+#bus-n6-module{
+    text-align: center;
+    background-color: navy;
+    color: white;
+}
+.about_business{
+    padding-top: 200px;
+    margin: 20px;
+}
+.bus-career{
+    margin-top: 25px;
+    padding-left: 20px;
+}
+.career-infor{
+    margin: 4px;
+    padding-bottom: 20px;
+}
+.bus-list{
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+
 @media screen and (max-width: 450px){
     .row{
         flex-direction: column;
@@ -128,5 +223,7 @@ position: relative;
     .row{
         flex-direction: column;
     }
+    table{
+        font-size: small;
+    }
 }
-
