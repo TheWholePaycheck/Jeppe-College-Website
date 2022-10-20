@@ -183,6 +183,9 @@ position: relative;
   
 }
 @media screen and (max-width: 768px){
+    html{
+        background-size: cover;
+    }
     .row{
         flex-direction: column;
     }
