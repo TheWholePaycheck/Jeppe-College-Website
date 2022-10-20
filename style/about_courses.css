@@ -8,8 +8,7 @@ html{
     background-size: 2000px;
 }
 .bus-header{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     background-color: navy;
     color: white;
     padding: 20px;
@@ -170,6 +169,66 @@ position: relative;
     padding-top: 20px;
 }
 
+#edu-saqa-module{
+    text-align: center;
+    background-color: rgb(255, 251, 0);
+    font-weight: 800;
+}
+#edu-qual-module{
+    font-weight: 600;
+    background-color: navy;
+    color: white;
+}
+#edu-nqf-module{
+    background-color: rgb(255, 251, 0);
+}
+.edu-container{
+    padding: 20px;
+}
+
+
+
+#pol-Id-module{
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+}
+#pol-qual-module{
+    background-color: yellow;
+    font-weight: 700;
+}
+#pol-lev-module{
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+}
+
+#cul-Id-module{
+    background-color: navy;
+    color: white;
+}
+#cul-qual-module{
+    background-color: yellow;
+}
+#cul-lev-module{
+    background-color: navy;
+    color: white;
+}
+
+#document{
+    background-color: #1C1564;
+    color: white;
+    font-weight: 600;
+}
+#core-module{
+    background-color: yellow;
+    font-weight: 600;
+}
+#duration{
+    background-color: #1C1564;
+    color: white;
+    font-weight: 600;
+}
 
 @media screen and (max-width: 450px){
     .row{
