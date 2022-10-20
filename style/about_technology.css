@@ -120,59 +120,6 @@ position: relative;
     font-weight: 900;
     color: rgb(0, 0, 0);
 }
-@media screen and (max-width: 450px){
-    .row{
-        flex-direction: column;
-    }
-}
-@media screen and (max-width: 680px){
-    .row{
-        flex-direction: column-reverse;
-    }
-  
-}
-@media screen and (max-width: 768px){
-    .row{
-        flex-direction: column;
-    }
-    .bus-header{
-        text-align: center;
-        font-size: 20px;
-        font-weight: 100;
-    }
-    .information img{
-        width: 320px;
-        
-    }
-    .about_business{
-        margin: 0;
-    }
-    .bus-header{
-        margin: 10px;
-    }
-    .header{
-        text-align: center;
-        font-size: 20px;
-        font-weight: 100;
-    }
-    .sub-header{
-        text-align: center;
-        font-size: 25px;
-    }
-    .career-infor{
-        margin: 10px;
-    }
-    .infor{
-        font-weight: 100;
-    }
-    
-}
-@media screen and (max-width: 900px){
-    .row{
-        flex-direction: column;
-    }
-}
-
 .bus-header{
     display: flex;
     justify-content: center;
@@ -222,6 +169,8 @@ position: relative;
     margin-left: 30px;
     padding-top: 20px;
 }
+
+
 @media screen and (max-width: 450px){
     .row{
         flex-direction: column;
@@ -273,5 +222,7 @@ position: relative;
     .row{
         flex-direction: column;
     }
+    table{
+        font-size: small;
+    }
 }
-
