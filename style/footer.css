@@ -4,6 +4,7 @@ footer {
     padding: 20px;
     border-top: double 2px yellow;
     margin-top: 20px;
+    font-size: large;
 }
 
 footer .footer-menus {
@@ -23,7 +24,7 @@ footer .footer-menu-links {
     color: yellow;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 7px;
 }
 
 .footer-menu-title {
