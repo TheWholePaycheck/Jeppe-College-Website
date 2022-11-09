@@ -297,7 +297,7 @@ section.articles {
     padding: 5px;
 }
 
-.article-card-container .article {
+.article-card-container{
     flex: 1;
 }
 
@@ -562,4 +562,28 @@ section.articles {
 .close-btn:hover{
     background-color: yellow;
     color: white;
+}
+
+
+
+
+
+
+/* annoucment section */
+.articles{
+    display: flex;
+    flex: 1;
+}
+.article-card{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.article-card-cover{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.artical-hero-btn{
+    
 }
