@@ -79,13 +79,76 @@
                         <img src="./icons/caret-down.svg">
 
                         <div class="desktop-dropdown-menu">
-                            <a class="desktop-dropdown-menu-link" href="./courses/business.html">Business</a>
-                            <a class="desktop-dropdown-menu-link" href="./courses/technology.html">Technology</a>
+                            <div class="desktop-submenu">
+                                Business
+
+                                <div class="sub-submenu">
+                                    <a href="/courses/business/business_management.html">Business Management</a>
+                                    <a href="/courses/business/education.html">Education</a>
+                                    <a href="/courses/business/financial_management.html">Financial Management</a>
+                                    <a href="/courses/business/hospitality.html">Hospitality</a>
+                                    <a href="/courses/business/human_resource.html">Human Resource</a>
+                                    <a href="/courses/business/legal_secretary.html">Legal Secretary</a>
+                                    <a href="/courses/business/management_assistant.html">Management Assistant</a>
+                                    <a href="/courses/business/marketing_managenement.html">Marketing Management</a>
+                                </div>
+                            </div>
+
+                            <div class="desktop-submenu">
+                                Technology
+
+                                <div class="sub-submenu">
+                                    <a href="/courses/technology/design_foundation.html">Design Foundation</a>
+                                    <a href="/courses/technology/end-user.html">End User</a>
+                                    <a href="/courses/technology/journalism.html">Jounalism</a>
+                                    <a href="/courses/technology/sound.html">Sound</a>
+                                    <a href="/courses/technology/radio_production.html">Radio Production</a>
+                                    <a href="/courses/technology/system_development-L5.html">System Development L5</a>
+                                    <a href="/courses/technology/system_development.html">System Development</a>
+                                    <a href="/courses/technology/technical_support.html">Techncal Support</a>
+                                </div>
+                            </div>
+                            
                             <a class="desktop-dropdown-menu-link" href="./courses/policing.html">Policing</a>
-                            <a class="desktop-dropdown-menu-link" href="./courses/engineering.html">Engineering</a>
+                            
+                            <div class="desktop-submenu">
+                                Engineering
+
+                                <div class="sub-submenu">
+                                    <a href="/courses/engineering/boiler_making.html">Boiler Making</a>
+                                    <a href="/courses/engineering/civil.html">Civil</a>
+                                    <a href="/courses/engineering/electrical.html">Electrical</a>
+                                    <a href="/courses/engineering/fitting_turning.html">Fitting Turning</a>
+                                    <a href="/courses/engineering/mechanical.html">Machenical</a>
+                                    <a href="/courses/engineering/motor_trade.html">Motor Trade</a>
+                                    <a href="/courses/engineering/plumbing.html">Plumbing</a>
+                                </div>
+                            </div>
                             <a class="desktop-dropdown-menu-link" href="./courses/culinary.html">Culinary</a>
-                            <a class="desktop-dropdown-menu-link" href="./courses/education.html">Education</a>
-                            <a class="desktop-dropdown-menu-link" href="./courses/short_courses.html">Short Courses</a>
+
+                            <div class="desktop-submenu">
+                                Education
+
+                                <div class="sub-submenu">
+                                    <a href="/courses/education/hospitality.html">Hospitality</a>
+                                    <a href="/courses/education/HR_management.html">HR Management</a>
+                                    <a href="/courses/education/local_goverment.html">Local Goverment</a>
+                                    <a href="/courses/education/public_sector.html">Public Sector</a>
+                                </div>
+                            </div>
+                            
+                            <div class="desktop-submenu">
+                                Short Courses
+
+                                <div class="sub-submenu">
+                                    <a href="/courses/short_courses/boot_camps.html">Boot Camps</a>
+                                    <a href="/courses/short_courses/health_safety.html">Health Safety</a>
+                                    <a href="/courses/short_courses/information.html">Information</a>
+                                    <a href="/courses/short_courses/networking.html">Networking</a>
+                                </div>
+                            </div>
+                            
+
                         </div>
                     </li>
                     
@@ -727,37 +790,37 @@
            popup.classList.remove("show")
         }
         
-        setTimeout(function(){
-            // show the popup
-            Notification()
+        // setTimeout(function(){
+        //     // show the popup
+        //     Notification()
         
-        var end = Date.now() + (15 * 600);
+        // var end = Date.now() + (15 * 600);
 
-        // go Buckeyes!
-        var colors = ['#ffff00', '#0000ff'];
+        // // go Buckeyes!
+        // var colors = ['#ffff00', '#0000ff'];
 
-        (function frame() {
-        confetti({
-            particleCount: 2,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0 },
-            colors: colors
-        });
-        confetti({
-            particleCount: 2,
-            angle: 120,
-            spread: 55,
-            origin: { x: 1 },
-            colors: colors
-        });
+        // (function frame() {
+        // confetti({
+        //     particleCount: 2,
+        //     angle: 60,
+        //     spread: 55,
+        //     origin: { x: 0 },
+        //     colors: colors
+        // });
+        // confetti({
+        //     particleCount: 2,
+        //     angle: 120,
+        //     spread: 55,
+        //     origin: { x: 1 },
+        //     colors: colors
+        // });
 
-        if (Date.now() < end) {
-            requestAnimationFrame(frame);
-        }
-        }())();
+        // if (Date.now() < end) {
+        //     requestAnimationFrame(frame);
+        // }
+        // }())();
 
-        },5000)
+        // },5000)
         
     </script>
     <!-- Link to the chatbot -->

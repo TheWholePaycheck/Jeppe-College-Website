@@ -231,11 +231,39 @@
     display: flex;
 }
 
-.desktop-dropdown-menu a {
+.desktop-dropdown-menu a, .desktop-dropdown-menu .desktop-submenu {
     color: yellow;
     padding: 10px 5px;
     font-size: smaller;
     cursor: pointer;
+}
+
+.desktop-submenu {
+    position: relative;
+}
+
+.desktop-submenu:hover {
+    background-color: yellow;
+    color: #1C1564;
+}
+
+.desktop-submenu:hover .sub-submenu {
+    display: flex;
+}
+
+.sub-submenu {
+    background-color: #1C1564;
+    top: 0;
+    position: absolute;
+    left: 100%;
+    width: 150px;
+    display: none;
+    flex-direction: column;
+    border: solid 2px yellow;
+}
+
+.sub-submenu a {
+    width: 100%;
 }
 
 .desktop-dropdown-menu a:hover {
