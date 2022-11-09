@@ -584,6 +584,21 @@ section.articles {
     width: 100%;
     height: 100%;
 }
-.artical-hero-btn{
-    
+.artical-hero{
+    font-size: small;
+    text-decoration: none;
+    color: white;
+}
+.article-card-info{
+    position: absolute;
+    bottom: 0;
+    background-color: #1C1564;
+    padding: 5px;
+    height: auto;
+    width: 100%;
+}
+.article-card-info:hover{
+    background-color: yellow;
+    font-weight: 700;
+    color: #000;
 }
