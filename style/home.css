@@ -432,6 +432,13 @@ section.articles {
         line-height: 50px;
         font-size: 34px !important;
     }
+
+    .popup-main {
+        flex-direction: column;
+        max-width: 400px;
+        max-height: 900px;
+        height: 100%;
+    }
 }
 
 /* disable the courses hover effect on tablets and smaller devices  */
@@ -498,26 +505,35 @@ section.articles {
 }
 
 
-.popup-image, .popup-image img {
-    object-fit: cover;
-    max-width: 300px;
+.popup-image {
     height: 100%;
+    width: 100%;
+    object-fit: cover;
+    flex: 1;
 }
 
 .popup-main {
     width: 80%;
+    height: 100%;
     max-width: 800px;
-    max-height: 250px;
+    max-height: 300px;
     display: flex;
     background-color: #1C1564;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.popup-main .popup-content {
+.popup-content {
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
+    background-color: #1C1564;
+    gap: 20px;
+    flex: 1;
 }
 
 #popup .close-btn {
@@ -529,11 +545,11 @@ section.articles {
     display: flex;
 }
 
-#popup .popup-description {
+.popup-description {
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#popup .popup-description::selection {
+.popup-description::selection {
     background-color: yellow;
     color: #1C1564;
 }
